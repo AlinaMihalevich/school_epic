@@ -3,157 +3,170 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Питомник животных</title>
-    <link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-	<header class="page-header">
-		<div class="container">
-			<a href="#" class="logo">
-				<img src="" alt="Logo">
-			</a>
-			<nav class="main-nav">
-				<ul>
-					<li><a href="#about_cattery">О питомнике</a></li>
-					<li><a href="#animals">Животные</a></li>
-					<li><a href="#reviews">Отзывы</a></li>
-					<li><a href="#blog">Блог</a></li>
-					<li><a href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-			<a href="tel;+7(925) 256 98 77" class="contact">8 (925) 256 98 77</a>
-		</div>
-	</header>
+    <div class="wrapper">
+    <header class="page-header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="img/Logo.png" alt="Logo">
+            </a>
+            <div class="right">
+                <nav class="main-nav">
+                    <ul>
+                        <li class="main-nav__item"><a href="#about_cattery">О питомнике</a></li>
+                        <li class="main-nav__item"><a href="#animals">Животные</a></li>
+                        <li class="main-nav__item"><a href="#reviews">Отзывы</a></li>
+                        <li class="main-nav__item"><a href="#blog">Блог</a></li>
+                        <li class="main-nav__item"><a href="#contacts">Контакты</a></li>
+                    </ul>
+                </nav>
+                <a href="tel:+7(925) 256 98 77" class="contact">+7 (925) 256 98 77</a>
+            </div>
+        </div>
+    </header>
     <main>
-    	<section class="promo">
-    		<div class="conteiner">
-    			<div class="promo-photo">
-    				<img src="" alt="promo-photo-dog" class="main-photo">
-    			</div>
-    			<div class="info">
-    				<h1 class="promo-title">Питомник породистых животных рядом с вашим домом</h1>
-    				<p class="promo-slogan">Животные как дети - им нужны мы</p>
-    			</div>
-    		</div>
-    	</section>
+        <section class="promo">
+            <div class="container">
+                <div class="promo-photo">
+                    <img src="img/promo-photo-dog.png" alt="promo-photo-dog" class="main-photo">
+                </div>
+                <div class="info">
+                    <h1 class="promo-title">Питомник породистых животных рядом с вашим домом</h1>
+                    <p class="promo-slogan">Животные как дети - им нужны мы</p>
+                </div>
+            </div>
+        </section>
 
-    	<section id="about_cattery" class="about">
-    		<div class="container">
-    			<h2 >О питомнике</h2>
-    			<p>Наш питомник - не просто дом для животных, а семья из разных пород собак и кошек.</p>
-    		</div>
-    		
-    		<div class="about__img">
-                <! alt запонить>
-    			<img src="" alt="" class="photo-dog">
-    		</div>
-    	<ul class="advantages-list">
-    		<li class="advantages__item">Лучшие представители своей породы</li>
-    		<li class="advantages__item">Сбалансированный рацион питания питомца</li>
-    		<li class="advantages__item">Ежедневный уход и тренировки</li>
-    		<li class="advantages__item">Веселье, свежий воздух и отличная компания</li>
-    	</ul>
-    	<a href="https://vk.com/videos-166537407" class="link">Видео с наших прогулок &#8594;</a>
-    	</section>
+        <section id="about_cattery" class="about">
+            <div class="container">
+                <h2>О питомнике</h2>
+                <p>Наш питомник - не просто дом для животных, а семья из разных пород собак и кошек.</p>
+                    <div class="about__img">
+                        <! alt запонить>
+                        <img src="" alt="" class="about_cattery_photo-dog">
+                    </div>
+                <ul class="advantages-list">
+                    <li class="advantages__item">Лучшие представители своей породы</li>
+                    <li class="advantages__item">Сбалансированный рацион питания питомца</li>
+                    <li class="advantages__item">Ежедневный уход и тренировки</li>
+                    <li class="advantages__item">Веселье, свежий воздух и отличная компания</li>
+                </ul>
+                <a href="https://vk.com/videos-166537407" class="link">Видео с наших прогулок </a>
+            </div>    
+        </section>
 
-    		<h2>Наши породы</h2>
-    		<ul>
-    			<li>
-    				<img src="" alt="french_bulldog">
-    				<h3>Французский бульдог</h3>
-    				<p>Идеальный вариант городской собаки - они входят в тройку самых популярных собак на планете. Любят короткие прогулки и хорошо поспать.</p>
-    				<a href="https://vk.com/epixx_pets?w=wall-166537407_2">посмотреть щенков &#8594;</a>
-    			</li>
-    			<li>
-    				<img src="" alt="golden_retriever">
-    				<h3>Золотистый ретривер</h3>
-    				<p>Добродушные, ориентированные на людей собаки. Они отлично ведут себя с детьми и больными. Могут быть повадырями.</p>
-    				<a href="https://vk.com/epixx_pets?w=wall-166537407_3" class="link blau-link">посмотреть щенков &#8594;</a>
-    			</li>
-    			<li>
-    				<img src="" alt="chow-chow">
-    				<h3>Чау-чау</h3>
-    				<p>Эти собаки с характером. Они всегда серьёзны, но временами проявляют характер.</p>
-    				<a href="https://vk.com/epixx_pets?w=wall-166537407_4" class="link blau-link">посмотреть щенков &#8594;</a>
-    			</li>
-    			<li>
-		    		<img src="" alt="puddel">
-		    		<h3>Пудель</h3>
-		    		<p>Активные и компанейские собаки. Любят много гулять, обладают отличным чувством юмора.</p>
-		    		<a href="https://vk.com/epixx_pets?w=wall-166537407_5" class="link blau-link">посмотреть щенков&#8594;</a>
-    			</li>
-    		</ul>
-    	</section>
+        <section class="dog-types">
+            <div class="container">
+            <h2>Наши породы</h2>
+            <ul>
+                <li>
+                    <img src="" alt="french_bulldog"  class="dog-type">
+                    <h3>Французский бульдог</h3>
+                    <p>Идеальный вариант городской собаки - они входят в тройку самых популярных собак на планете. Любят короткие прогулки и хорошо поспать.</p>
+                    <a href="https://vk.com/epixx_pets?w=wall-166537407_2" class="link blau-link">посмотреть щенков </a>
+                </li>
+                <li>
+                    <img src="" alt="golden_retriever" class="dog-type">
+                    <h3>Золотистый ретривер</h3>
+                    <p>Добродушные, ориентированные на людей собаки. Они отлично ведут себя с детьми и больными. Могут быть повадырями.</p>
+                    <a href="https://vk.com/epixx_pets?w=wall-166537407_3" class="link blau-link">посмотреть щенков </a>
+                </li>
+                <li>
+                    <img src="" alt="chow-chow" class="dog-type">
+                    <h3>Чау-чау</h3>
+                    <p>Эти собаки с характером. Они всегда серьёзны, но временами проявляют характер.</p>
+                    <a href="https://vk.com/epixx_pets?w=wall-166537407_4" class="link blau-link">посмотреть щенков </a>
+                </li>
+                <li>
+                    <img src="" alt="puddel" class="dog-type">
+                    <h3>Пудель</h3>
+                    <p>Активные и компанейские собаки. Любят много гулять, обладают отличным чувством юмора.</p>
+                    <a href="https://vk.com/epixx_pets?w=wall-166537407_5" class="link blau-link">посмотреть щенков</a>
+                </li>
+            </ul>
+            </div>
+        </section>
 
-    	<section id="reviews" class="reviews">
-    		<h2 class="author">Отзывы хозяев</h2>
-			<img src="" alt="logo-review" class="logo-review">
-    		<h3>Татьяна зверева</h3>
-			<time>27.02.2018</time>
-    		<blockquote><p class="review"> Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликатный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</p></blockquote>
-			<img src="" alt="personal-photo">
-			<p>Больше отзывов можно найти у нас в <a href="https://vk.com/topic-166537407_41021587" class="link blau-link">группе ВК</a></p>
-    	</section>
+        <section id="reviews" class="reviews">
+            <div class="container">
+                <h2">Отзывы хозяев</h2>
+                <img src="" alt="logo-review" class="logo-review">
+                <h3 class="author">Татьяна зверева</h3>
+                <time>27.02.2018</time>
+                <blockquote><p class="review"> Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликатный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</p></blockquote>
+                <img src="" alt="reviev_personal-photo">
+                <p>Больше отзывов можно найти у нас в <a href="https://vk.com/topic-166537407_41021587" class="link blau-link">группе ВК</a></p>
+            </div>
+        </section>
 
-    	<section id="blog" class="conteiner_blau_fons"
-    		<h2>Всё о животных</h2>
-    		<p class="info">Мы ведём активный блог про наших животных в социальных сетях - присоединяйтесь к нам. Полезные материалы про обучение, дрессировку, питание.</p>
-			<div class="social_networks">
-				<a href="https://vk.com/epixx_pets" class="vk-link"><img src="" alt="vk-logo"></a>
-				<a href="" class="feecbook-link"><img src="" alt="feecbook-logo" ></a>
-				<a href="" class="instagram-link"><img src="" alt="instagram-logo"></a>
-			</div>
+        <section id="blog" class="blog">
+            <div class="container">
+                <h2>Всё о животных</h2>
+                <p class="info">Мы ведём активный блог про наших животных в социальных сетях - присоединяйтесь к нам. Полезные материалы про обучение, дрессировку, питание.</p>
+                <div class="social_networks">
+                    <a href="https://vk.com/epixx_pets" class="vk-link"><img src="" alt="vk-logo"></a>
+                    <a href="" class="feecbook-link"><img src="" alt="feecbook-logo" ></a>
+                    <a href="" class="instagram-link"><img src="" alt="instagram-logo"></a>
+                </div>
 
-    		<div class="mini-article">
-                <! alt запонить>
-    			<img src="" alt="" class="article__img">
-				<p>Правильный рацион для взрослого пса</p>
-				<a href="https://vk.com/@epixx_pets-diet-for-adult-dog" class="link blau-link">Читать статью &#8594;</a>
-    		</div>
-    		<div class="mini-article">
-                <! alt запонить>
-                <img src="" alt="" class="article__img">
-    			<p>Бывает ли собачья депрессия?</p>
-    		 	<a href="https://vk.com/@epixx_pets-dogs-depression" class="link blau-link">Читать статью &#8594;</a>
-    		</div> 
-    	</section>
+                <div class="mini-article">
+                    <! alt запонить>
+                    <img src="" alt="" class="article__img">
+                    <p>Правильный рацион для взрослого пса</p>
+                    <a href="https://vk.com/@epixx_pets-diet-for-adult-dog" class="link blau-link">Читать статью &#8594;</a>
+                </div>
+
+                <div class="mini-article">
+                    <! alt запонить>
+                    <img src="" alt="" class="article__img">
+                    <p>Бывает ли собачья депрессия?</p>
+                    <a href="https://vk.com/@epixx_pets-dogs-depression" class="link blau-link">Читать статью &#8594;</a>
+                </div>
+            </div> 
+        </section>
 
         <section id="contacts" class="contacts">
-            <h2> Контакты</h2>
-            <p class="contacts_text">АДРЕС</p>
-            <p>г.Санкт-Петербург, ул.Кирочная 61</p>
-            
-            <p class="contacts_text">РЕЖИМ РАБОТЫ</p>
-            <p>Каждый день с 10:00 до 22:00</p>
-            
-            <p class="contacts_text">E-MAIL</p>
-            <p>petshelp@pets.ru</p>
-            
-            <p class="contacts_text">ТЕЛЕФОН</p>
-            <p>+7 (925) 256 78 96</p>
-            <p>Мы принимаем звонки с 10:00 до 21:00</p>
+            <div class="container">
+                <h2> Контакты</h2>
+                <p class="contacts_text">АДРЕС</p>
+                <p>г.Санкт-Петербург, ул.Кирочная 61</p>
+                
+                <p class="contacts_text">РЕЖИМ РАБОТЫ</p>
+                <p>Каждый день с 10:00 до 22:00</p>
+                
+                <p class="contacts_text">E-MAIL</p>
+                <p>petshelp@pets.ru</p>
+                
+                <p class="contacts_text">ТЕЛЕФОН</p>
+                <p>+7 (925) 256 78 96</p>
+                <p>Мы принимаем звонки с 10:00 до 21:00</p>
+            </div>
         </section>
     </main>
 
     <footer>
-    	<div class="footer-nav">
-    		<nav class="main-nav">
-				<ul class="footer-nav">
-					<li><a href="#about_cattery">О питомнике</a></li>
+        <div class="footer-nav">
+            <nav class="main-nav">
+                <ul class="footer-nav">
+                    <li><a href="#about_cattery">О питомнике</a></li>
                     <li><a href="#animals">Животные</a></li>
                     <li><a href="#reviews">Отзывы</a></li>
                     <li><a href="#blog">Блог</a></li>
                     <li><a href="#contacts">Контакты</a></li>
-				</ul>
-			</nav>
-			<div class="social_networks">
-				<a href="https://vk.com/epixx_pets" class="vk-link"><img src="" alt="vk-logo"></a>
-				<a href="" class="feecbook-link"><img src="" alt="feecbook-logo" ></a>
-				<a href="" class="instagram-link"><img src="" alt="instagram-logo"></a>
-			</div>
-    	</div>
+                </ul>
+            </nav>
+            <div class="social_networks">
+                <a href="https://vk.com/epixx_pets" class="vk-link"><img src="" alt="vk-logo"></a>
+                <a href="" class="feecbook-link"><img src="" alt="feecbook-logo" ></a>
+                <a href="" class="instagram-link"><img src="" alt="instagram-logo"></a>
+            </div>
+        </div>
 
     </footer>
+
+</div>
 </body>
 </html>

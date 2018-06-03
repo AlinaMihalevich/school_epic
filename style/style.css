@@ -1,7 +1,233 @@
-body {
+/*.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow_next {
+    width: 20px;
+    height: 14px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_next_blue {
+    width: 20px;
+    height: 14px;
+    background-position: -35px -5px;
+}
+
+.sprite-blockquote {
+    width: 81px;
+    height: 66px;
+    background-position: -5px -29px;
+}
+
+.sprite-facebook-blue {
+    width: 26px;
+    height: 26px;
+    background-position: -96px -5px;
+}
+
+.sprite-facebook-yelow {
+    width: 26px;
+    height: 26px;
+    background-position: -96px -41px;
+}
+
+.sprite-instagram-blue {
+    width: 26px;
+    height: 26px;
+    background-position: -96px -77px;
+}
+
+.sprite-instagram-yellow {
+    width: 26px;
+    height: 26px;
+    background-position: -132px -5px;
+}
+
+.sprite-vk-blue {
+    width: 26px;
+    height: 26px;
+    background-position: -132px -41px;
+}
+
+.sprite-vk-yellow {
+    width: 26px;
+    height: 26px;
+    background-position: -132px -77px;
+}*/
+
+/*Промо блок
+Картинка кладется задним фоном.
+
+Стилизация
+Комментариями обозначены (начало крупных модулей/блоков разметки).
+
+Изображения
+Для названий не используются пробелы, кириллица, транслит, верхний регистр. По названию изображения понятно из какого оно блока.
+Выбран подходящий формат изображений JPEG / PNG.
+Все изображения содержит заполненный атрибут alt.
+
+ВСЁ О ЖИВОТНЫХ Фон сделан с использованием свойства background repeat
+
+Общие технические требования
+Стандарты вёрстки: HTML5, CSS3, валидный код.
+Используемые шрифты: Fira Sans и Roboto (есть на http://google.com/fonts).*/
+
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/Roboto/Roboto-Medium.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Fira Sans';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/Fira_Sans/FiraSans-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Fira Sans';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/Fira_Sans/FiraSans-Medium.ttf') format('truetype');
+}
+/*Common styles*/
+body
+{
+    background-color: #ede9e0;
+}
+
+.wrapper
+{
+    width: 1024px;
+    margin: 0 auto;
+}
+
+.container
+{
+    width: 940px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+/*Header*/
+.page-header {}
+
+.logo {
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    float: left;
+}
+
+.main-nav__item {
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+    padding-right: 30px;
+    line-height: 30px;
+}
+
+.main-nav__item a {
+    text-decoration: none;
+    color: #202020;
+    line-height: 30px;
+}
+
+.main-nav {
+    display: inline-block;
+    word-spacing: -5px;
+    word-spacing: -6px;
+    margin: 15px -17px;
+}
+
+.contact{
+    display: inline-block;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    color: #510fad;
+}
+
+.right {
+    float: right;
+}
+/*main*/
+/*promo-section*/
+.promo {}
+.promo-photo {}
+.main-photo {}
+.info {}
+
+.promo-title {
+    font-family: Fira Sans, sans-serif;
+    font-size: 48px;
+}
+
+.promo-slogan {
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #727173;
+}
+/*about_cattery-section*/
+.about {}
+
+h2 {
+    font-family: Fira Sans, sans-serif;
+    font-size: 36px;
+    color: white;
 
 }
 
-.main-nav a{
-
+p {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    color: #b8adc8;
 }
+
+.about__img {}
+.about_cattery_photo-dog {}
+.advantages-list {}
+.advantages__item {}
+.link {}
+
+/*dog-types-section*/
+.dog-type {}
+h3 {}
+p {}
+.link .blau-link {}
+
+/*reviews-section*/
+.reviews {}
+.author {}
+.logo-review {}
+time {}
+.review
+.reviev_personal-photo {}
+/*blog-section*/
+
+/*contacts-section*/
+
+/*footer*/
+/**/
