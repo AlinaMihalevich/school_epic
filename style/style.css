@@ -1,8 +1,4 @@
-/*.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: block;
-}
+/*
 .sprite-arrow_next {
     width: 20px;
     height: 14px;
@@ -122,6 +118,12 @@ body
     margin: 0 auto;
 }
 
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+
 /*Header*/
 
 
@@ -180,20 +182,33 @@ body
 {
     float: right;
 }
+
 /*main*/
 /*promo-section*/
+.promo__photo
+{
+    float: left;
+}
+.main-photo {}
 
-.promo-title
+.promo__info
+{
+    line-height: normal;
+
+    width: 840px;
+}
+
+.promo__title 
 {
     font-family: Fira Sans, sans-serif;
     font-size: 48px;
     font-weight: bold;
 
-    margin-top: 105px;
-    margin-bottom: 45px;
+    margin-top: 103px;
+    margin-bottom: 42px;
 }
 
-.promo-slogan
+.promo__slogan
 {
     font-family: Roboto, sans-serif;
     font-size: 14px;
@@ -209,62 +224,23 @@ body
     border-left: 2px solid #510fad;
 }
 
-.promo__info
-{
-    line-height: normal;
-
-    width: 840px;
-}
-.promo-photo
-{
-    float: left;
-}
 /*about_cattery-section*/
 
 .about
 {
-    padding-top: 180px;
+    /*padding-top: 180px;
     padding-bottom: 200px;
 
-    background: #510fad;
+    background: #510fad;*/
 }
 
 .about__head
 {
-    margin-bottom: 70px;
+    /*margin-bottom: 70px;
     padding-right: 265px;
-    padding-left: 323px;
-}
-
-.about__row
-{
-    clear: both;
-
-    content: ''
-    display: block;
-}
-.advantages__item
-{
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-
-    color: white;
-}
-.about__img
-{
-    float: left;
-    overflow: hidden;
-
-    width: 460px;
-
-    border-right: 10px;
-    box-shadow: -10px 0 50px 0 rgba();
-}
-.about__img img
-{
-    display: block;
-
+    padding-left: 323px;*/
     width: 100%;
+    cl
 }
 
 h2
@@ -272,22 +248,67 @@ h2
     font-family: Fira Sans, sans-serif;
     font-size: 36px;
     font-style: normal;
+    letter-spacing: 0.05em;
+    line-height: 40px;
 
-    text-align: center;
+    margin-left: 325px;
 }
 
-.description 
+.caption__title 
+{
+    color: #b8adc8;
+    
+    padding-left: 325px;
+    padding-right: 260px;
+    margin-bottom: 67px;
+}
+
+.about__img
+{
+    display: block;
+
+    width: 50%;
+}
+
+.about_cattery_photo-dog {
+    float: left;
+
+    width: 460px;
+
+    /*border-right: 10px;*/
+    /*box-shadow: -10px 0 50px 0 rgba();*/
+}
+
+
+.about__row
+{
+
+}
+
+.advantages-list {
+    width: 46%;
+    float: right;
+    margin-bottom: 63px;
+}
+
+.advantages__item
 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    line-height: 38px;
 
-    color: #b8adc8;
-
+    color: white;
 }
 
-
-
-
+.about__link {
+    font-family: Fira Sans, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    
+    text-decoration: none;
+    color: #ffec00;
+    padding-left: 23px;
+}
 
 
 
@@ -311,8 +332,10 @@ h2
     float: left;
 
     box-sizing: border-box;
-    width: 49%;
+    width: 48%;
     
+margin-top: 26px;
+margin-right: 18px;
 
     list-style-type: none;
 }
@@ -335,7 +358,9 @@ h3
     font-size: 24px;
      clear: left;
      vertical-align: top;
-     margin-bottom: 17px;
+     margin-bottom: 0px;
+     letter-spacing: 0.05em;
+     line-height: 50px;
 
 
 }
@@ -344,19 +369,28 @@ p
 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
+    margin: auto;
 
     color: #737274;
     line-height: 30px;
-    padding-left: 160px;  
+    padding-left: 160px; 
+    
 }
+
+
 
 /*reviews-section*/
 
-
+.sprite-blockquote {
+    width: 81px;
+    height: 66px;
+    background-position: -5px -29px;
+}
 
 
 
 /*blog-section*/
+
 
 /*contacts-section*/
 
