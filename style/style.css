@@ -1,67 +1,85 @@
-/*
-.sprite-arrow_next {
+
+.sprite
+{
+    display: inline-block;
+
+    width: 26px;
+    height: 26px;
+
+    background: url(../img/spritesheet.png) no-repeat;
+}
+
+.sprite-arrow_next
+{
     width: 20px;
     height: 14px;
+
     background-position: -5px -5px;
 }
-.sprite-arrow_next_blue {
+
+.sprite-arrow_next_blue
+{
     width: 20px;
     height: 14px;
+
     background-position: -35px -5px;
 }
-.sprite-blockquote {
+
+.sprite-blockquote
+{
     width: 81px;
     height: 66px;
+
     background-position: -5px -29px;
 }
-.sprite-facebook-blue {
+
+.sprite-facebook-yellow
+{
     width: 26px;
     height: 26px;
-    background-position: -96px -5px;
-}
-.sprite-facebook-yelow {
-    width: 26px;
-    height: 26px;
+
     background-position: -96px -41px;
 }
-.sprite-instagram-blue {
+
+.sprite-instagram-yellow
+{
     width: 26px;
     height: 26px;
-    background-position: -96px -77px;
-}
-.sprite-instagram-yellow {
-    width: 26px;
-    height: 26px;
+
     background-position: -132px -5px;
 }
-.sprite-vk-blue {
+
+.sprite-vk-yellow
+{
     width: 26px;
     height: 26px;
+
+    background-position: -132px -77px;
+}
+
+.sprite-facebook-blue
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -96px -5px;
+}
+
+.sprite-instagram-blue
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -96px -77px;
+}
+
+.sprite-vk-blue
+{
+    width: 26px;
+    height: 26px;
+
     background-position: -132px -41px;
 }
-.sprite-vk-yellow {
-    width: 26px;
-    height: 26px;
-    background-position: -132px -77px;
-}*/
-
-
-/*Промо блок
-Картинка кладется задним фоном.
-
-Стилизация
-Комментариями обозначены (начало крупных модулей/блоков разметки).
-
-Изображения
-Для названий не используются пробелы, кириллица, транслит, верхний регистр. По названию изображения понятно из какого оно блока.
-Выбран подходящий формат изображений JPEG / PNG.
-Все изображения содержит заполненный атрибут alt.
-
-ВСЁ О ЖИВОТНЫХ Фон сделан с использованием свойства background repeat
-
-Общие технические требования
-Стандарты вёрстки: HTML5, CSS3, валидный код.
-Используемые шрифты: Fira Sans и Roboto (есть на http://google.com/fonts).*/
 
 @font-face
 {
@@ -72,7 +90,8 @@
     src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
-@font-face
+@font-fac
+e
 {
     font-family: 'Roboto';
     font-weight: 500;
@@ -118,11 +137,7 @@ body
     margin: 0 auto;
 }
 
-.sprite {
-    background-image: url(spritesheet.png);
-    background-repeat: no-repeat;
-    display: inline-block;
-}
+
 
 /*Header*/
 
@@ -142,7 +157,6 @@ body
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-weight: 400;
-    line-height: 30px;
     line-height: 30px;
 
     display: inline-block;
@@ -189,7 +203,7 @@ body
 {
     float: left;
 }
-.main-photo {}
+
 
 .promo__info
 {
@@ -198,7 +212,7 @@ body
     width: 840px;
 }
 
-.promo__title 
+.promo__title
 {
     font-family: Fira Sans, sans-serif;
     font-size: 48px;
@@ -240,7 +254,6 @@ body
     padding-right: 265px;
     padding-left: 323px;*/
     width: 100%;
-    cl
 }
 
 h2
@@ -248,19 +261,24 @@ h2
     font-family: Fira Sans, sans-serif;
     font-size: 36px;
     font-style: normal;
-    letter-spacing: 0.05em;
     line-height: 40px;
 
-    margin-left: 325px;
+    padding-right: 55px;
+
+    text-align: center;
+    letter-spacing: .05em;
 }
 
-.caption__title 
+.about__title-caption
 {
-    color: #b8adc8;
-    
-    padding-left: 325px;
-    padding-right: 260px;
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+
     margin-bottom: 67px;
+    padding: 0 260px 0 325px;
+
+    color: #b8adc8;
 }
 
 .about__img
@@ -270,7 +288,8 @@ h2
     width: 50%;
 }
 
-.about_cattery_photo-dog {
+.about__photo-dog
+{
     float: left;
 
     width: 460px;
@@ -280,18 +299,17 @@ h2
 }
 
 
-.about__row
+
+
+.about__advantages-list
 {
-
-}
-
-.advantages-list {
-    width: 46%;
     float: right;
+
+    width: 46%;
     margin-bottom: 63px;
 }
 
-.advantages__item
+.about__advantages-item
 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
@@ -300,14 +318,17 @@ h2
     color: white;
 }
 
-.about__link {
+.about__link
+{
     font-family: Fira Sans, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.05em;
-    
-    text-decoration: none;
-    color: #ffec00;
+
     padding-left: 23px;
+
+    text-decoration: none;
+    letter-spacing: .05em;
+
+    color: #ffec00;
 }
 
 
@@ -316,83 +337,169 @@ h2
 .dog-type__img
 {
     float: left;
-    padding-right: 0px;
+
+    padding-right: 0;
 
     border-radius: 100%;
 }
 
-.dog-types__wrap
+.dog-type__wrap
 {
     overflow: hidden;
-    padding-left: 0px;
+
+    padding-left: 0;
 }
 
-.dog-types__item
+.dog-type__item
 {
     float: left;
 
     box-sizing: border-box;
     width: 48%;
-    
-margin-top: 26px;
-margin-right: 18px;
+    margin-top: 26px;
+    margin-right: 18px;
 
     list-style-type: none;
 }
-.look
+
+.dog-type__text
+{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin: auto;
+    padding-bottom: 55px;
+    padding-left: 160px;
+
+    color: #737274;
+}
+.dog-type__link
 {
     font-family: Fira Sans, sans-serif;
     font-size: 14px;
     font-weight: bold;
 
+    clear: both;
+
+    padding-left: 20px;
+
     text-decoration: none;
     text-transform: uppercase;
 
     color: #510fad;
-    clear: both;
-    padding-left: 20px;
 }
 h3
 {
     font-family: Fira Sans, sans-serif;
     font-size: 24px;
-     clear: left;
-     vertical-align: top;
-     margin-bottom: 0px;
-     letter-spacing: 0.05em;
-     line-height: 50px;
+    line-height: 50px;
 
+    clear: left;
 
+    margin-bottom: 0;
+
+    vertical-align: top;
+    letter-spacing: .05em;
 }
 
-p
-{
-    font-family: Roboto, sans-serif;
-    font-size: 16px;
-    margin: auto;
-
-    color: #737274;
-    line-height: 30px;
-    padding-left: 160px; 
-    
-}
 
 
 
 /*reviews-section*/
 
-.sprite-blockquote {
-    width: 81px;
-    height: 66px;
-    background-position: -5px -29px;
+/*blog-section*/
+section.blog {
+    background: url(../img/pattern.png) repeat;
+    height: 500px
 }
 
+.blog__article {
+    width: 48%;
+    display: inline-block;
+    vertical-align: middle;
 
+}
 
-/*blog-section*/
+.blog__article-title {
+    color: white;
+    text-align: left;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
 
+.blog__article-info {
+    font-family: Roboto, sans-serif;
+    line-height: 30px;
+    color: #b8adc8;
+}
 
+.blog__mini-article {
+    width: 23%;
+    display: inline-block;
+    /*vertical-align: middle;*/
+    border-radius: 10px;
+    background-color: #fff;
+}
+
+ .mini-article__title {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    letter-spacing: 0.05em;
+ }
+
+.blog__link {
+    font-family: Fira Sans, sans-serif;
+    font-size: 14px;
+    color: #5c11c5;
+    text-decoration: none;
+}
 /*contacts-section*/
 
 /*footer*/
+footer .container
+{
+    border-top: 2px solid #737274;
+}
+.footer-nav
+{
+    display: inline-block;
+    float: left;
+
+    margin: 15px 0;
+}
+.footer-nav__list
+{
+    padding-left: 0;
+}
+.footer-nav__item
+{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 30px;
+
+    display: inline-block;
+
+    padding-right: 24px;
+}
+
+.footer-nav__item a
+{
+    line-height: 30px;
+
+    text-decoration: none;
+
+    color: #202020;
+}
+
+.footer__social-networks
+{
+    display: inline-block;
+    float: right;
+
+    vertical-align: middle;
+}
+
+
 /**/
