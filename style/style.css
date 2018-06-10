@@ -127,21 +127,26 @@ body
 {
     width: 1024px;
     margin: 0 auto;
+    background-image: url('..//img/promo-photo-dog.png');
+    background-repeat: no-repeat;
+    background-position: 20px top;
 }
 
 .container
 {
-    overflow: hidden;
-
     width: 940px;
     margin: 0 auto;
+}
+.container:after {
+    content: "";
+    clear: both;
+    display: table;
 }
 
 
 
+
 /*Header*/
-
-
 .logo
 {
     display: inline-block;
@@ -199,6 +204,10 @@ body
 
 /*main*/
 /*promo-section*/
+.promo {
+    padding-bottom: 258px;
+}
+
 .promo__photo
 {
     float: left;
@@ -218,8 +227,7 @@ body
     font-size: 48px;
     font-weight: bold;
 
-    margin-top: 103px;
-    margin-bottom: 42px;
+    margin: 103px 0px 42px 318px;
 }
 
 .promo__slogan
@@ -239,21 +247,25 @@ body
 }
 
 /*about_cattery-section*/
+.about__container {
+    width: 1024px;
 
+
+
+}
 .about
 {
-    /*padding-top: 180px;
-    padding-bottom: 200px;
-
-    background: #510fad;*/
+    padding-top: 86px;
+    padding-bottom: 120px;
+    background: #510fad;
 }
 
 .about__head
 {
     /*margin-bottom: 70px;
     padding-right: 265px;
-    padding-left: 323px;*/
-    width: 100%;
+    padding-left: 323px;
+    width: 100%;*/
 }
 
 h2
@@ -334,6 +346,10 @@ h2
 
 
 /*dog-types-section*/
+.dog-type {
+    padding-top: 187px;
+    padding-bottom: 80px;
+}
 .dog-type__img
 {
     float: left;
@@ -407,8 +423,55 @@ h3
 
 
 /*reviews-section*/
+.reviews {
+    padding-bottom: 298px;
+}
+.reviews__title {
+   margin-bottom: 0px; 
+}
+
+.reviews__left {
+    display: inline-block;
+    width: 50%;
+}
+
+.rewiews__author {
+    margin: 0;
+
+}
+
+.reviews__blockquote {
+   font-family: Roboto, sans-serif;
+   font-size: 16px;
+   line-height: 30px;
+    
+    text-align: left;
+    margin: 0px;
+}
+
+.reviews__figure {
+    display: inline-block;
+    margin: 0;
+}
+
+.reviews__figure-img {
+    border-radius: 10px;
+    border: 1px solid #b2afa8;
+    width: 460px;
+}
+
+.reviews__figcaption , time {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #737274;
+    margin-top: ;
+}
 
 /*blog-section*/
+.blog {
+    
+}
 section.blog {
     background: url(../img/pattern.png) repeat;
     height: 500px
@@ -454,7 +517,49 @@ section.blog {
     color: #5c11c5;
     text-decoration: none;
 }
+
+
 /*contacts-section*/
+.contacts {
+    height: 380px;
+    padding-top: 108px;
+}
+
+.contacts__row1 {
+    float: left;
+    width: 51%;
+}
+
+.contacts__row2 {
+    float: left;
+}
+
+
+.contacts-title {
+    display: block;
+    text-align: left;
+    margin-bottom: 15px;
+    letter-spacing: 0.05em;
+}
+
+.contacts__block {
+    display: block;
+
+}
+
+span {
+    font-family: Fira Sans, sans-serif;
+    font-size: 14px;
+    color: #737274;
+    display: inline-block;
+    
+}
+ .contacts__text {
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+ }
+
 
 /*footer*/
 footer .container

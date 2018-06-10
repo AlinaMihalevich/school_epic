@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div class="wrapper">
+<div class="wrapper">
     <header class="page-header">
         <div class="container">
             <a href="#" class="logo">
@@ -30,9 +30,6 @@
     <main>
         <section class="promo">
             <div class="container">
-                <div class="promo__photo">
-                    <img src="img/promo-photo-dog.png" alt="promo-photo-dog" class="main-photo">
-                </div>
                 <div class="promo__info">
                     <h1 class="promo__title">Питомник породистых животных рядом <br> с вашим домом</h1>
                     <p class="promo__slogan">Животные как дети - им нужны мы.</p>
@@ -41,7 +38,7 @@
         </section>
 
         <section id="about_cattery" class="about">
-            <div class="container">
+            <div class="container ">
                 <div class="about__head">
                     <h2>О питомнике</h2>
                     <p class="about__title-caption">Наш питомник - не просто дом для животных, а семья из разных пород собак и кошек.</p>
@@ -101,13 +98,19 @@
 
         <section id="reviews" class="reviews">
             <div class="container">
-                <h2>Отзывы хозяев</h2>
-                <img class="sprite sprite-blockquote"></img>
-                <h3 class="author">Татьяна зверева</h3>
-                <time>27.02.2018</time>
-                <blockquote class="review"> Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликатный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</blockquote>
-                <img src="img/photo_review.jpg" alt="reviev_personal-photo">
-                <p>Больше отзывов можно найти у нас в <a href="https://vk.com/topic-166537407_41021587" class="link blau-link">группе ВК</a></p>
+                <h2 class="reviews__title">Отзывы хозяев</h2>
+                <div class="reviews__left">
+                    
+                    <img class="sprite sprite-blockquote"></img>
+                    <h3 class="rewiews__author">Татьяна Зверева</h3>
+                    <time>27.02.2018</time>
+                    <blockquote class="reviews__blockquote"> Хочу выразить большую благодарность Вам за это чудо - малыша, который появился у нас в семье. Деликатный, милый, ласковый и нежный белоснежный Уник, в которого я влюбилась с первого взгляда, увидев его фотографию на сайте Вашего питомника. Очень умный малыш!</blockquote>
+                </div>
+                <figure class = "reviews__figure">
+                        <img src="img/photo_review.jpg" alt="reviews__photo" class="reviews__figure-img">
+                        <figcaption class="reviews__figcaption">Больше отзывов можно найти у нас в <a href="https://vk.com/topic-166537407_41021587" class="link blau-link">группе ВК</a></figcaption>
+                </figure>
+                
             </div>
         </section>
 
@@ -140,19 +143,43 @@
 
         <section id="contacts" class="contacts">
             <div class="container">
-                <h2> Контакты</h2>
-                <p class="contacts_text">АДРЕС</p>
-                <p>г.Санкт-Петербург, ул.Кирочная 61</p>
+                <h2 class="contacts-title"> Контакты</h2>
+               <div class="contacts__row1">
+                 
+                 
+                 <div class="contacts__block">
+
+                    <p class="contacts__text"> 
+                        <span class="contacts__title">АДРЕС</span><br> 
+                        г.Санкт-Петербург, ул.Кирочная 61
+                    </p>
+                 </div>
+
+                 <div class="contacts__block">
+                    <p class="contacts__text"> 
+                        <span class="contacts__title">РЕЖИМ РАБОТЫ</span>
+                        <br> Каждый день с 10:00 до 22:00
+                    </p>
+                 </div>  
+               </div>
                 
-                <p class="contacts_text">РЕЖИМ РАБОТЫ</p>
-                <p>Каждый день с 10:00 до 22:00</p>
+            <div class="contacts__row2">
+                 <div class="contacts__block">
+                    <p class="contacts__text"> 
+                        <span class="contacts__title">E-MAIL</span><br>
+                    petshelp@pets.ru
+                    </p>
+                 </div>
+                 <div class="contacts__block">
+                    <p class="contacts__text">
+                        <span class="contacts__title">ТЕЛЕФОН</span><br>
+                        +7 (925) 256 78 96 <br>
+                        Мы принимаем звонки с 10:00 до 21:00
+                    </p>
+            </div>   
+            </div>
                 
-                <p class="contacts_text">E-MAIL</p>
-                <p>petshelp@pets.ru</p>
-                
-                <p class="contacts_text">ТЕЛЕФОН</p>
-                <p>+7 (925) 256 78 96</p>
-                <p>Мы принимаем звонки с 10:00 до 21:00</p>
+
             </div>
         </section>
     </main>
@@ -176,7 +203,6 @@
         </div>
 
     </footer>
-
 </div>
 </body>
 </html>
