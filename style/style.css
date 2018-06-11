@@ -19,8 +19,7 @@
     src: url('../fonts/Roboto/Roboto-Regular.ttf') format('truetype');
 }
 
-@font-fac
-e
+@font-face
 {
     font-family: 'Roboto';
     font-weight: 500;
@@ -456,7 +455,7 @@ h3
 
     border: 1px solid #b2afa8;
     border-radius: 10px;
-    box-shadow: -4px -4px 50px #0007a;
+    box-shadow: -2px -3px 50px #5c5c65;
 }
 
 .reviews__figcaption,
@@ -531,7 +530,7 @@ section.blog
 
     border-radius: 10px;
     background-color: #ede9e0;
-    box-shadow: -4px 0 10px #00052;
+    box-shadow: 0px 0 10px #001;
 }
 
 .blog__mini-article:hover
@@ -698,7 +697,7 @@ footer .container
 {
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    font-weight: 400px;
+    font-weight: normal;
     line-height: 30px;
 
     display: inline-block;
