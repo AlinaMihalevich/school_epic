@@ -5,80 +5,9 @@
 
     width: 26px;
     height: 26px;
+    padding-left: 2px;
 
     background: url(../img/spritesheet.png) no-repeat;
-}
-
-.sprite-arrow_next
-{
-    width: 20px;
-    height: 14px;
-
-    background-position: -5px -5px;
-}
-
-.sprite-arrow_next_blue
-{
-    width: 20px;
-    height: 14px;
-
-    background-position: -35px -5px;
-}
-
-.sprite-blockquote
-{
-    width: 81px;
-    height: 66px;
-
-    background-position: -5px -29px;
-}
-
-.sprite-facebook-yellow
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -96px -41px;
-}
-
-.sprite-instagram-yellow
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -132px -5px;
-}
-
-.sprite-vk-yellow
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -132px -77px;
-}
-
-.sprite-facebook-blue
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -96px -5px;
-}
-
-.sprite-instagram-blue
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -96px -77px;
-}
-
-.sprite-vk-blue
-{
-    width: 26px;
-    height: 26px;
-
-    background-position: -132px -41px;
 }
 
 @font-face
@@ -127,6 +56,7 @@ body
 {
     width: 1024px;
     margin: 0 auto;
+
     background-image: url('..//img/promo-photo-dog.png');
     background-repeat: no-repeat;
     background-position: 20px top;
@@ -137,10 +67,12 @@ body
     width: 940px;
     margin: 0 auto;
 }
-.container:after {
-    content: "";
-    clear: both;
+.container:after
+{
     display: table;
+    clear: both;
+
+    content: '';
 }
 
 
@@ -167,6 +99,11 @@ body
     display: inline-block;
 
     padding-right: 24px;
+}
+
+.main-nav__item a:hover
+{
+    color: #510fad;
 }
 
 .main-nav__item a
@@ -204,15 +141,10 @@ body
 
 /*main*/
 /*promo-section*/
-.promo {
+.promo
+{
     padding-bottom: 258px;
 }
-
-.promo__photo
-{
-    float: left;
-}
-
 
 .promo__info
 {
@@ -226,8 +158,9 @@ body
     font-family: Fira Sans, sans-serif;
     font-size: 48px;
     font-weight: bold;
+    line-height: 59px;
 
-    margin: 103px 0px 42px 318px;
+    margin: 103px 0 44px 318px;
 }
 
 .promo__slogan
@@ -242,21 +175,28 @@ body
     letter-spacing: 1px;
     text-transform: uppercase;
 
-    color: #727173;
+    color: #737274;
     border-left: 2px solid #510fad;
 }
 
 /*about_cattery-section*/
-.about__container {
+.about__container
+{
     width: 1024px;
-
-
-
 }
+
+.about-title
+{
+    margin-bottom: 22px;
+
+    color: white;
+}
+
 .about
 {
     padding-top: 86px;
     padding-bottom: 120px;
+
     background: #510fad;
 }
 
@@ -287,8 +227,8 @@ h2
     font-size: 16px;
     line-height: 30px;
 
-    margin-bottom: 67px;
-    padding: 0 260px 0 325px;
+    margin-bottom: 73px;
+    padding: 0 248px 0 325px;
 
     color: #b8adc8;
 }
@@ -306,12 +246,9 @@ h2
 
     width: 460px;
 
-    /*border-right: 10px;*/
-    /*box-shadow: -10px 0 50px 0 rgba();*/
+    border-radius: 9px;
+    box-shadow: -10px 0 50px #000;
 }
-
-
-
 
 .about__advantages-list
 {
@@ -343,10 +280,30 @@ h2
     color: #ffec00;
 }
 
+.about__link:hover
+{
+    color: #b8adc8;
+}
+
+.sprite-arrow_next
+{
+    width: 20px;
+    height: 14px;
+
+    background-position: -5px -5px;
+}
+
+.sprite-arrow_next:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
 
 
 /*dog-types-section*/
-.dog-type {
+.dog-type
+{
     padding-top: 187px;
     padding-bottom: 80px;
 }
@@ -372,8 +329,9 @@ h2
 
     box-sizing: border-box;
     width: 48%;
-    margin-top: 26px;
+    margin-top: 25px;
     margin-right: 18px;
+    padding-bottom: 20px;
 
     list-style-type: none;
 }
@@ -384,27 +342,43 @@ h2
     font-size: 16px;
     line-height: 30px;
 
+    width: 65%;
     margin: auto;
-    padding-bottom: 55px;
     padding-left: 160px;
 
     color: #737274;
 }
+
 .dog-type__link
 {
     font-family: Fira Sans, sans-serif;
     font-size: 14px;
     font-weight: bold;
 
+    display: inline-block;
     clear: both;
 
+    margin-top: 40px;
     padding-left: 20px;
 
+    text-align: center;
     text-decoration: none;
     text-transform: uppercase;
 
     color: #510fad;
 }
+
+.dog-type__link:hover
+{
+    color: #737274;
+}
+
+.sprite-arrow_next_blue:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
 h3
 {
     font-family: Fira Sans, sans-serif;
@@ -423,142 +397,285 @@ h3
 
 
 /*reviews-section*/
-.reviews {
-    padding-bottom: 298px;
+.reviews
+{
+    padding-bottom: 207px;
 }
-.reviews__title {
-   margin-bottom: 0px; 
+.reviews__title
+{
+    margin-top: 27px;
+    margin-bottom: 0;
+    padding-right: 12px;
 }
 
-.reviews__left {
+.reviews__left
+{
     display: inline-block;
+
     width: 50%;
+    margin-top: 17px;
+
+    vertical-align: top;
 }
 
-.rewiews__author {
+.rewiews__author
+{
     margin: 0;
-
 }
 
-.reviews__blockquote {
-   font-family: Roboto, sans-serif;
-   font-size: 16px;
-   line-height: 30px;
-    
-    text-align: left;
-    margin: 0px;
+.reviews__blockquote
+{
+    font-family: Roboto, sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+
+    margin: 0;
+    margin-top: 16px;
 }
 
-.reviews__figure {
+.sprite-blockquote
+{
+    width: 81px;
+    height: 66px;
+
+    background-position: -5px -29px;
+}
+
+.reviews__figure
+{
     display: inline-block;
+
     margin: 0;
 }
 
-.reviews__figure-img {
-    border-radius: 10px;
-    border: 1px solid #b2afa8;
+.reviews__figure-img
+{
     width: 460px;
+    margin-top: 74px;
+    margin-left: 4px;
+
+    border: 1px solid #b2afa8;
+    border-radius: 10px;
+    box-shadow: -4px -4px 50px #0007a;
 }
 
-.reviews__figcaption , time {
+.reviews__figcaption,
+time
+{
     font-family: Roboto, sans-serif;
     font-size: 16px;
     font-style: italic;
+
+    margin-top: 24px;
+    margin-left: 0;
+
+    letter-spacing: .05em;
+
     color: #737274;
-    margin-top: ;
 }
+.reviews__link
+{
+    text-decoration: none;
 
+    color: #510fad;
+}
 /*blog-section*/
-.blog {
-    
-}
-section.blog {
+
+section.blog
+{
+    height: 500px;;
+
     background: url(../img/pattern.png) repeat;
-    height: 500px
 }
 
-.blog__article {
-    width: 48%;
+.blog__article
+{
     display: inline-block;
-    vertical-align: middle;
+    float: left;
 
+    width: 48%;
+    padding-top: 137px;
 }
 
-.blog__article-title {
-    color: white;
-    text-align: left;
+.blog__article-title
+{
     margin-top: 0;
     margin-bottom: 20px;
+
+    text-align: left;
+
+    color: white;
 }
 
-.blog__article-info {
+.blog__article-info
+{
     font-family: Roboto, sans-serif;
     line-height: 30px;
+
+    padding-bottom: 30px;
+
     color: #b8adc8;
 }
 
-.blog__mini-article {
-    width: 23%;
-    display: inline-block;
-    /*vertical-align: middle;*/
-    border-radius: 10px;
-    background-color: #fff;
+.blog__article-row
+{
+    float: left;
 }
 
- .mini-article__title {
+.blog__mini-article
+{
+    display: inline-block;
+
+    width: 220px;
+    margin: 107px -13px 0 29px;;
+
+    border-radius: 10px;
+    background-color: #ede9e0;
+    box-shadow: -4px 0 10px #00052;
+}
+
+.blog__mini-article:hover
+{
+    box-shadow: -2px 0 50px #000;
+}
+
+.mini-article__title
+{
     font-family: Roboto, sans-serif;
     font-size: 16px;
-    letter-spacing: 0.05em;
- }
+    font-weight: bold;
+    line-height: 30px;
 
-.blog__link {
-    font-family: Fira Sans, sans-serif;
-    font-size: 14px;
-    color: #5c11c5;
-    text-decoration: none;
+    margin-left: 10px;
+
+    letter-spacing: .05em;
 }
 
+.mini-article__img
+{
+    border-radius: 10px 10px 0 0;
+}
+
+.blog__link
+{
+    font-family: Fira Sans, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: inline-block;
+
+    margin-bottom: 19px;
+    margin-left: 10px;
+
+    text-decoration: none;
+    letter-spacing: .05em;
+
+    color: #510fad;
+}
+.blog__link:hover
+{
+    color: #737274;
+}
+
+.sprite-arrow_next_blue
+{
+    width: 20px;
+    height: 14px;
+    margin-left: 13px;
+
+    background-position: -35px -5px;
+}
+
+.sprite-facebook-yellow
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -96px -41px;
+}
+.sprite-facebook-yellow:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.sprite-instagram-yellow
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -132px -5px;
+}
+.sprite-instagram-yellow:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.sprite-vk-yellow
+{
+    width: 26px;
+    height: 26px;
+    padding-left: 10px;
+
+    background-position: -132px -77px;
+}
+.sprite-vk-yellow:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
 
 /*contacts-section*/
-.contacts {
+.contacts
+{
     height: 380px;
     padding-top: 108px;
 }
 
-.contacts__row1 {
+.contacts__row1
+{
     float: left;
+
     width: 51%;
 }
 
-.contacts__row2 {
+.contacts__row2
+{
     float: left;
 }
 
 
-.contacts-title {
+.contacts-title
+{
     display: block;
-    text-align: left;
+
     margin-bottom: 15px;
-    letter-spacing: 0.05em;
+
+    text-align: left;
+    letter-spacing: .05em;
 }
 
-.contacts__block {
+.contacts__block
+{
     display: block;
-
 }
 
-span {
+span
+{
     font-family: Fira Sans, sans-serif;
     font-size: 14px;
-    color: #737274;
+
     display: inline-block;
-    
+
+    color: #737274;
 }
- .contacts__text {
+.contacts__text
+{
     font-family: Roboto, sans-serif;
     font-size: 16px;
     line-height: 30px;
- }
+}
 
 
 /*footer*/
@@ -571,7 +688,7 @@ footer .container
     display: inline-block;
     float: left;
 
-    margin: 15px 0;
+    margin: 5px 0;
 }
 .footer-nav__list
 {
@@ -598,13 +715,56 @@ footer .container
     color: #202020;
 }
 
+.footer-nav__item a:hover
+{
+    color: #510fad;
+}
+
 .footer__social-networks
 {
     display: inline-block;
     float: right;
 
+    padding-top: 20px;
+
     vertical-align: middle;
 }
 
+.sprite-facebook-blue
+{
+    width: 26px;
+    height: 26px;
 
+    background-position: -96px -5px;
+}
+.sprite-facebook-blue:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+
+.sprite-instagram-blue
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -96px -77px;
+}
+.sprite-instagram-blue:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
+.sprite-vk-blue
+{
+    width: 26px;
+    height: 26px;
+
+    background-position: -132px -41px;
+}
+.sprite-vk-blue:hover
+{
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+}
 /**/
