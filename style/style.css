@@ -45,6 +45,7 @@
 
     src: url('../fonts/Fira_Sans/FiraSans-Medium.ttf') format('truetype');
 }
+
 /*Common styles*/
 body
 {
@@ -74,8 +75,32 @@ body
     content: '';
 }
 
+h2
+{
+    font-family: Fira Sans, sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    line-height: 40px;
 
+    padding-right: 55px;
 
+    text-align: center;
+    letter-spacing: .05em;
+}
+
+h3
+{
+    font-family: Fira Sans, sans-serif;
+    font-size: 24px;
+    line-height: 50px;
+
+    clear: left;
+
+    margin-bottom: 0;
+
+    vertical-align: top;
+    letter-spacing: .05em;
+}
 
 /*Header*/
 .logo
@@ -197,27 +222,6 @@ body
     padding-bottom: 120px;
 
     background: #510fad;
-}
-
-.about__head
-{
-    /*margin-bottom: 70px;
-    padding-right: 265px;
-    padding-left: 323px;
-    width: 100%;*/
-}
-
-h2
-{
-    font-family: Fira Sans, sans-serif;
-    font-size: 36px;
-    font-style: normal;
-    line-height: 40px;
-
-    padding-right: 55px;
-
-    text-align: center;
-    letter-spacing: .05em;
 }
 
 .about__title-caption
@@ -372,34 +376,27 @@ h2
     color: #737274;
 }
 
-.sprite-arrow_next_blue:hover
+.sprite-arrow_next_blue_active
+{
+    width: 20px;
+    height: 14px;
+    margin-left: 13px;
+
+    background-position: -35px -5px;
+}
+
+.sprite-arrow_next_blue_active:hover
 {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
-
-h3
-{
-    font-family: Fira Sans, sans-serif;
-    font-size: 24px;
-    line-height: 50px;
-
-    clear: left;
-
-    margin-bottom: 0;
-
-    vertical-align: top;
-    letter-spacing: .05em;
-}
-
-
-
 
 /*reviews-section*/
 .reviews
 {
     padding-bottom: 207px;
 }
+
 .reviews__title
 {
     margin-top: 27px;
@@ -472,19 +469,22 @@ time
 
     color: #737274;
 }
+
 .reviews__link
 {
     text-decoration: none;
 
     color: #510fad;
 }
+
+
 /*blog-section*/
 
 section.blog
 {
-    height: 500px;;
+    height: 500px;
 
-    background: url(../img/pattern.png) repeat;
+    background: url(../img/pattern.png) repeat;;
 }
 
 .blog__article
@@ -526,11 +526,11 @@ section.blog
     display: inline-block;
 
     width: 220px;
-    margin: 107px -13px 0 29px;;
+    margin: 107px -13px 0 29px;
 
     border-radius: 10px;
     background-color: #ede9e0;
-    box-shadow: 0px 0 10px #001;
+    box-shadow: 0 0 10px #001;;
 }
 
 .blog__mini-article:hover
@@ -545,6 +545,8 @@ section.blog
     font-weight: bold;
     line-height: 30px;
 
+    margin-top: 18px;
+    margin-bottom: 0;
     margin-left: 10px;
 
     letter-spacing: .05em;
@@ -563,17 +565,23 @@ section.blog
 
     display: inline-block;
 
-    margin-bottom: 19px;
-    margin-left: 10px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    margin-left: 11px;
 
-    text-decoration: none;
     letter-spacing: .05em;
+}
+
+.blog__link a
+{
+    text-decoration: none;
 
     color: #510fad;
 }
-.blog__link:hover
+
+.blog__link a:hover
 {
-    color: #737274;
+    cursor: pointer;
 }
 
 .sprite-arrow_next_blue
@@ -592,6 +600,7 @@ section.blog
 
     background-position: -96px -41px;
 }
+
 .sprite-facebook-yellow:hover
 {
     -webkit-filter: grayscale(100%);
@@ -605,6 +614,7 @@ section.blog
 
     background-position: -132px -5px;
 }
+
 .sprite-instagram-yellow:hover
 {
     -webkit-filter: grayscale(100%);
@@ -615,10 +625,10 @@ section.blog
 {
     width: 26px;
     height: 26px;
-    padding-left: 10px;
 
     background-position: -132px -77px;
 }
+
 .sprite-vk-yellow:hover
 {
     -webkit-filter: grayscale(100%);
@@ -667,8 +677,11 @@ span
 
     display: inline-block;
 
+    text-transform: uppercase;
+
     color: #737274;
 }
+
 .contacts__text
 {
     font-family: Roboto, sans-serif;
@@ -680,8 +693,9 @@ span
 /*footer*/
 footer .container
 {
-    border-top: 2px solid #737274;
+    border-top: 2px solid #d5d1ca;
 }
+
 .footer-nav
 {
     display: inline-block;
@@ -689,10 +703,12 @@ footer .container
 
     margin: 5px 0;
 }
+
 .footer-nav__list
 {
     padding-left: 0;
 }
+
 .footer-nav__item
 {
     font-family: Roboto, sans-serif;
@@ -736,6 +752,7 @@ footer .container
 
     background-position: -96px -5px;
 }
+
 .sprite-facebook-blue:hover
 {
     -webkit-filter: grayscale(100%);
@@ -749,11 +766,13 @@ footer .container
 
     background-position: -96px -77px;
 }
+
 .sprite-instagram-blue:hover
 {
     -webkit-filter: grayscale(100%);
             filter: grayscale(100%);
 }
+
 .sprite-vk-blue
 {
     width: 26px;
@@ -761,6 +780,7 @@ footer .container
 
     background-position: -132px -41px;
 }
+
 .sprite-vk-blue:hover
 {
     -webkit-filter: grayscale(100%);
