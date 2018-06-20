@@ -1,0 +1,27 @@
+/*Подключение шрифтов*/
+@font-face
+{
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-style: normal;
+
+    src: url('../fonts/PT_Sans/PT_Sans-Web-Regular.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'PT Sans';
+    font-weight: 700;
+    font-style: normal;
+
+    src: url('../fonts/PT_Sans/PT_Sans-Web-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+    font-family: 'Prata';
+    font-weight: 500;
+    font-style: normal;
+
+    src: url('../fonts/Prata/Prata-Regular.ttf') format('truetype');
+}
