@@ -25,3 +25,254 @@
 
     src: url('../fonts/Prata/Prata-Regular.ttf') format('truetype');
 }
+
+/*COMMON STYLE*/
+.page-header__inner,
+.promo__inner
+{
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+/*PAGE-HEADER*/
+.page-header
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding-top: 25px;
+}
+
+.page-header__row
+{
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.page-header__nav
+{
+    display: none;
+
+    box-sizing: border-box;
+}
+
+
+/*LOGO*/
+.logo
+{
+    font-family: Prata, serif;
+    font-size: 30px;
+
+    z-index: 10;
+
+    color: #eec643;
+}
+
+/*MAIN-NAV*/
+.main-nav
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    padding-top: 75px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    color: #fff;
+    background-color: #000;
+}
+
+.main-nav--open
+{
+    display: block;
+}
+
+.main-nav__list
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.main-nav__link
+{
+    font-family: RT Sans, sans-serif;
+    font-size: 16px;
+
+    display: block;
+
+    padding: 15px 0;
+
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+
+}
+
+/*BURGER*/
+.burger
+{
+    position: relative;
+    z-index: 10;
+
+    background-color: #f00; /*просто, чтобы видеть*/
+}
+
+/*PROMO*/
+.promo {
+    padding-top: 140px;
+    padding-bottom: 130px;
+
+    color: white;
+    background-image: url(../img/promo-header--mobile.jpg);
+    background-position: center;
+    background-size: cover;
+}
+@media (min-width: 600px) {
+    .promo {
+        background-image: url(../img/promo-header.jpg);
+    }
+}
+/*<picture>
+    <source media="(min-width: 447px)" srcset="img/carpet.jpg">
+    <source media="(min-width: 1200px)" srcset="img/mega-carpet.jpg">
+    <img src="img/carpet-sq.jpg" alt="">
+</picture>*/
+
+.promo__title {
+    font-family: Prata, serif;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 42px;
+}
+.promo__title--desktop {
+    display: none;
+}
+
+.promo__slogan {
+    font-family: PT Sans, serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+.promo__slogan--desktop {
+    display: none;
+}
+
+.promo__button {
+    font-family: PT Sans, serif;
+    font-size: 16px;
+    background-color: #eec643;
+    text-transform: uppercase;
+    text-align: center;
+    color: white;
+
+    
+    padding: 25px 78px;
+}
+
+.promo__form {
+    display: none;  
+}
+
+/*DIRECTIONS*/
+.directions__article--guitar {
+    background-image: url(../img/directions_card_img_1.jpg);
+}
+
+.directions__article--vocal {
+    background-image: url(../img/directions_card_img_2.jpg);
+}
+
+.directions__article--pianist {
+    background-image: url(../img/directions_card_img_3.jpg);
+}
+
+.directions__article--lectures {
+    background-image: url(../img/directions_card_img_4.jpg);
+}
+
+.directions__article--all {
+    background-color: #eec643;
+}
+
+@media (min-width: 1200px)
+{
+    .page-header__inner,
+    .promo__inner
+    {
+        width: 1170px;
+        margin: 0 auto;
+    }
+
+    .page-header__nav
+    {
+        display: block;
+
+        flex-grow: 1;
+    }
+
+    .main-nav
+    {
+        position: static;
+
+        padding: 0;
+
+        background-color: transparent;
+    }
+
+    .main-nav__list
+    {
+        display: flex;
+
+        justify-content: flex-end;
+    }
+    .main-nav__item
+    {
+        margin-left: 10px;
+    }
+    .main-nav__link
+    {
+        padding: 10px;
+        color: #000;
+    }
+
+    .burger
+    {
+        display: none;
+    }
+
+
+    .promo__title--desktop {
+        display: block;
+        font-size: 55px;
+    }
+
+    .promo__title--mobile {
+        display: none;
+    }
+
+    .promo__slogan--desktop {
+        display: block;
+        font-size: 20px;
+    }
+
+    .promo__slogan--mobile {
+        display: none;
+    }
+
+    .promo__button {
+        display: none;
+    }
+
+    .promo__form {
+        display: block;
+    }
+}

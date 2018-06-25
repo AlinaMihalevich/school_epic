@@ -2,58 +2,163 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Школа Diez</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
+	<link rel="stylesheet" href="style/normalize.css">
 </head>
 <body>
-	<div class="wrapper">
-		<header class="page-header">
+	<header class="page-header">
 		    <div class="page-header__inner">
-		      <a href="" class="logo">Diez</a>
-		      <nav class="main-nav">
-		        <ul class="main-nav__list">
-		          <li class="main-nav__item"><a href="" class="main-nav__link">Направления</a></li>
-		          <li class="main-nav__item"><a href="" class="main-nav__link">О школе</a></li>
-		          <li class="main-nav__item"><a href="" class="main-nav__link">Видео</a></li>
-		          <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
-		        </ul>
-		      </nav>
+		    	<div class="page-header__row"> <!-- flex-родитель -->	
+			      <span class="logo">Diez</span>
+			      <!-- <class="page-header__logo ">
+			      	<div class="logo"></div>
+			      </div> -->
+			      <nav class="page-header__nav main-nav">
+			        <ul class="main-nav__list">
+			          <li class="main-nav__item"><a href="" class="main-nav__link">Направления</a></li>
+			          <li class="main-nav__item"><a href="" class="main-nav__link">О школе</a></li>
+			          <li class="main-nav__item"><a href="" class="main-nav__link">Видео</a></li>
+			          <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
+			        </ul>
+			      </nav>
+			    <button class="burger">
+			    	<span class="burger__inner"></span>
+			    </button>
+		    	</div>
 		    </div>
-	  </header>	
-	  <main>	
+	</header>	
+	<main>	
         <section class="promo">
             <div class="promo__inner">
                 <div class="promo__info">
-                    <h1 class="promo__title">Diez — школа музыкального искусства</h1>
-                    <p class="promo__slogan">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
+                    <h1 class="promo__title promo__title--desktop">Diez — школа музыкального искусства</h1>
+                    <h1 class="promo__title promo__title--mobile">Школа музыкального искусства</h1>
+                    <p class="promo__slogan promo__slogan--desktop">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
+                    <p class="promo__slogan promo__slogan--mobile">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
+                    <div class="promo__button">Вводный урок</div>
                 </div>
-            	<form class="promo__form form">
+                
+            	<form class="promo__form form form--grey">
 					<h3 class="form__title">Вводный урок</h3>
                 	<p class="form__description">Попробуй любые направления бесплатно</p>
-                	<input class="form-control" placeholder="Имя" type="name">
-                	<input class="form-control" placeholder="Телефон" type="tel">
-                	<input class="form-control" list="directions" placeholder="Направления" type="directions">
+                	<input class="form__control" placeholder="Имя" type="name">
+                	<input class="form__control" placeholder="Телефон" type="tel">
+                	<input class="form__control" list="directions" placeholder="Направления" type="directions">
 							<datalist class="form-control" id="directions">
 						    <option>Вокал</option>
 						    <option>Гитара</option>
 						    <option>Фортепиано</option>
-						    <option>Лекции</option>
+						    <option>Лекции</option> 
 					   </datalist> 
-					<button class="form-button__submit">Записаться</button>   
+					<button class="submit submit--grey">Записаться</button>   
             	</form>
                 </div>    
             </div>   
         </section>
+
 		<section class="directions">
-			<h2></h2>
-
+			<h2 class="directions__title">Растим музыкантов</h2>
+			  	<article class="direction__article directions__article--guitar ">
+			  		<h3 class="article__title">Гитара</h3>
+			  		<p class="article__text">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андреас Сеговия— мы научим</p>
+			  		<p class="article__price">1 урок от 800₽</p>
+			  	</article>
+			  	<article class="direction__article directions__article--vocal">
+			  		<h3 class="article__title">Вокал</h3>
+			  		<p class="article__text">Академический, рок, эстрадный, джазовый</p>
+			  	</article>
+			  	<article class="direction__article directions__article--pianist">
+			  		<h3 class="article__title">Фортепиано</h3>
+			  		<p class="article__text">Академический, рок, эстрадный, джазовый</p>
+			  	</article>
+			  	
+			  	<article class="direction__article directions__article--lectures">
+			  		<h3 class="article__title">Лекции</h3>
+			  		<p class="article__text">Подтяни свои знания в теории музыки</p>
+			  	</article>
+			  	<article class="direction__article directions__article--all">
+			  		<h3 class="article__title">Все направления</h3>
+			  	</article>
 		</section>
-		section.about>h2{Задаём темп}+
-		section.video>h2{В стенах школы}
-		section.contacts>h2{Ждём тебя}
-	  </main>
 
-	  <footer class="page-footer">
+		<section class="about">
+			<h2 class="about__title">Задаём темп</h2>
+			<article class="about__article about__article--structure">
+				<h3 class="article__title">Состав</h3>
+			  	<p class="article__text">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+			</article>
+			<article class="about__article about__article--result">
+				<h3 class="article__title">Результат</h3>
+			  	<p class="article__text">Выступи на отчётном концерте через три месяца обучения</p>
+			</article>
+			<article class="about__article about__article--studio">
+				<h3 class="article__title">Студия</h3>
+			  	<p class="article__text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+			</article>
+
+        	<form class="form form--yellow">
+				<h3 class="form__title">Вводный урок</h3>
+            	<p class="form__description">Попробуй любые направления бесплатно</p>
+            	<input class="form__control" placeholder="Имя" type="name">
+            	<input class="form__control" placeholder="Телефон" type="tel">
+            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
+						<datalist class="form-control" id="directions">
+					    <option>Вокал</option>
+					    <option>Гитара</option>
+					    <option>Фортепиано</option>
+					    <option>Лекции</option> 
+				   </datalist> 
+				<button class="submit submit--yellow">Записаться</button>   
+        	</form>
+		</section>
+
+		<section class="video">
+			<h2 class="video__title">В стенах школы</h2>
+			<article class="video__block">
+				<h3 class="video__text">Зимняя вишня</h3>
+				<p>Заключительный зимний концерт 2017 года выступало 97 учеников</p>
+				<button class="video__button"></button>
+			</article>
+			<article class="video__block">
+				<h3 class="video__text">Янг Чжо</h3>
+				<p>Репетиция сольной партии скрипки</p>
+				<button class="video__button"></button>
+			</article>
+			<article class="video__block">
+				<h3 class="video__text">Летний штиль</h3>
+				<p>За кулисами концерта</p>
+				<button class="video__button"></button>
+			</article>
+			<article class="video__block">
+				<h3 class="video__text">Сергей Трофимов</h3>
+				<p>ЛЮБЭ — Выйду в поле с конём</p>
+				<button class="video__button"></button>
+			</article>
+		</section>
+		<section class="contacts">
+			<h2 class="contacts__title">Ждём тебя</h2>
+			<p class="contacts__text">+7 (812) 566 56 56 СПБ, 6-я Линия ВО, 42</p>
+			<img src="" alt="">
+			<form class="form form--yellow">
+				<h3 class="form__title">Вводный урок</h3>
+            	<p class="form__description">Попробуй любые направления бесплатно</p>
+            	<input class="form__control" placeholder="Имя" type="name">
+            	<input class="form__control" placeholder="Телефон" type="tel">
+            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
+						<datalist class="form-control" id="directions">
+					    <option>Вокал</option>
+					    <option>Гитара</option>
+					    <option>Фортепиано</option>
+					    <option>Лекции</option> 
+				   </datalist> 
+				<button class="submit submit--yellow">Записаться</button>   
+        	</form>
+		</section>
+	</main>
+
+	<footer class="page-footer">
 	    <div class="page-footer__inner">
 	      <a href="" class="logo">Diez</a>
 	      <ul class="page-footer__list">
@@ -63,7 +168,6 @@
 	          <li class="page-footer__link">vkontakte</li>
 	      </ul>
 	    </div>
-	  </footer>
-	</div>
+	</footer>
 </body>
 </html>
