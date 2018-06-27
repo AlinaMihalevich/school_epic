@@ -45,14 +45,14 @@
                 	<p class="form__description">Попробуй любые направления бесплатно</p>
                 	<input class="form__control" placeholder="Имя" type="name">
                 	<input class="form__control" placeholder="Телефон" type="tel">
-                	<input class="form__control" list="directions" placeholder="Направления" type="directions">
-							<datalist class="form-control" id="directions">
-						    <option>Вокал</option>
-						    <option>Гитара</option>
-						    <option>Фортепиано</option>
-						    <option>Лекции</option> 
-					   </datalist> 
-					<button class="submit submit--grey">Записаться</button>   
+              		<select class="form-control" name="directions" id="directions">
+              			<option>Направления</option>
+	      				<option>Вокал</option>
+					    <option>Гитара</option>
+					    <option>Фортепиано</option>
+					    <option>Лекции</option> 
+              		</select>
+					<button class="submit submit--grey">Записаться</button> 
             	</form>
                 </div>    
             </div>   
@@ -83,35 +83,62 @@
 			  	</article>
 		</section>
 
-		<section class="about">
-			<h2 class="about__title">Задаём темп</h2>
-			<article class="about__article about__article--structure">
-				<h3 class="article__title">Состав</h3>
-			  	<p class="article__text">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
-			</article>
-			<article class="about__article about__article--result">
-				<h3 class="article__title">Результат</h3>
-			  	<p class="article__text">Выступи на отчётном концерте через три месяца обучения</p>
-			</article>
-			<article class="about__article about__article--studio">
-				<h3 class="article__title">Студия</h3>
-			  	<p class="article__text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-			</article>
+		<section class="advantages">
+			<div class="advantages__inner">
+				<div class="advantages__row">
+					<div class="advantages__col advantages__col--6">
+						<div class="advantages__row">
+							<div class="advantages__col advantages__col--12">
+								<h2 class="advantages__title">Задаём темп</h2>
+							</div>
+							<div class="advantages__col advantages__col--6">
+								<article class="advantages__article advantages__article--structure">
+									<h3 class="article__title">Состав</h3>
+								  	<p class="article__text">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+								</article>
+							</div>
+							<div class="advantages__col advantages__col--6">
+								<article class="advantages__article advantages__article--result">
+									<h3 class="article__title">Результат</h3>
+								  	<p class="article__text">Выступи на отчётном концерте через три месяца обучения</p>
+								</article>
+							</div>
+						</div>
+					</div>
+					<div class="advantages__col about__col--6">
+						<div class="advantages__row">
+							<div class="advantages__col advantages__col--6">
+								<article class="advantages__article advantages__article--studio">
+									<h3 class="article__title">Студия</h3>
+								  	<p class="article__text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+								</article>
+							</div>
+							<div class="advantages__col advantages__col--6">
+					        	<form class="form form--yellow">
+									<h3 class="form__title">Вводный урок</h3>
+					            	<p class="form__description">Попробуй любые направления бесплатно</p>
+					            	<input class="form__control" placeholder="Имя" type="name">
+					            	<input class="form__control" placeholder="Телефон" type="tel">
+					            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
+										<select class="form-control">
+										    <option>Вокал</option>
+										    <option>Гитара</option>
+										    <option>Фортепиано</option>
+										    <option>Лекции</option> 
+									   </select>
+									<button class="submit submit--yellow">Записаться</button>   
+					        	</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
 
-        	<form class="form form--yellow">
-				<h3 class="form__title">Вводный урок</h3>
-            	<p class="form__description">Попробуй любые направления бесплатно</p>
-            	<input class="form__control" placeholder="Имя" type="name">
-            	<input class="form__control" placeholder="Телефон" type="tel">
-            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
-						<datalist class="form-control" id="directions">
-					    <option>Вокал</option>
-					    <option>Гитара</option>
-					    <option>Фортепиано</option>
-					    <option>Лекции</option> 
-				   </datalist> 
-				<button class="submit submit--yellow">Записаться</button>   
-        	</form>
+        	
 		</section>
 
 		<section class="video">
