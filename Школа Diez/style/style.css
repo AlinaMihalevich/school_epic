@@ -1,4 +1,4 @@
-/*Подключение шрифтов*/
+/*--------------------------Подключение шрифтов--------------------------*/
 @font-face
 {
     font-family: 'PT Sans';
@@ -26,7 +26,7 @@
     src: url('../fonts/Prata/Prata-Regular.ttf') format('truetype');
 }
 
-/*COMMON STYLE*/
+/*--------------------------COMMON STYLE--------------------------*/
 .page-header__inner,
 .promo__inner
 {
@@ -34,7 +34,7 @@
     padding-left: 15px;
 }
 
-/*PAGE-HEADER*/
+/*--------------------------PAGE-HEADER--------------------------*/
 .page-header
 {
     position: absolute;
@@ -60,7 +60,7 @@
 }
 
 
-/*LOGO*/
+/*--------------------------LOGO------------------------------*/
 .logo
 {
     font-family: Prata, serif;
@@ -71,7 +71,7 @@
     color: #eec643;
 }
 
-/*MAIN-NAV*/
+/*--------------------------MAIN-NAV--------------------------*/
 .main-nav
 {
     position: absolute;
@@ -112,12 +112,11 @@
 
     text-decoration: none;
     text-transform: uppercase;
-    text-align: center;
     color: #fff;
 
 }
 
-/*BURGER*/
+/*--------------------------BURGER--------------------------*/
 .burger
 {
     position: relative;
@@ -126,10 +125,11 @@
     background-color: #f00; /*просто, чтобы видеть*/
 }
 
-/*PROMO*/
+/*--------------------------PROMO--------------------------*/
 .promo {
     padding-top: 140px;
     padding-bottom: 130px;
+    height: 300px;
 
     color: white;
     background-image: url(../img/promo-header--mobile.jpg);
@@ -156,6 +156,8 @@
     font-family: PT Sans, serif;
     font-size: 16px;
     line-height: 22px;
+    height: 133px;
+    min-width: 195px;
 }
 .promo__slogan--desktop {
     display: none;
@@ -169,36 +171,96 @@
     text-align: center;
     color: white;
 
-    
     padding: 25px 78px;
 }
 
-.promo__form {
+.promo__form, .adventages__form, .contacts__form {
     display: none;  
 }
 
-/*DIRECTIONS*/
+/*--------------------------DIRECTIONS--------------------------*/
+.directions__inner {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.directions__row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+    height: 100%;
+}
+
+.directions__col {
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+
+.directions__article {
+    background-color: #eec643;
+    color: #fff;
+    padding: 5px;
+    box-sizing: border-box;
+    margin-bottom: 30px;
+}
+
+.directions__title {
+    font-family: Prata, serif;
+    font-size: 30px;
+    border-top: 2px solid #eec643;
+    border-bottom: 2px solid #eec643;
+}
+
+.article__title {
+    font-family: PT Sans, sans-serif;
+    font-weight: bold;
+}
+
+.article__text {
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.article__text--desktop {
+    display: none;
+}
+
+.article__price {
+    display: none;
+}
+
+.article__title--all {
+    font-family: PT Sans, sans-serif;
+    font-size: 16px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
 .directions__article--guitar {
-    background-image: url(../img/directions_card_img_1.jpg);
+    /*background-image: url(../img/directions_card_img_1.jpg);*/
 }
 
 .directions__article--vocal {
-    background-image: url(../img/directions_card_img_2.jpg);
+    /*background-image: url(../img/directions_card_img_2.jpg);*/
 }
 
 .directions__article--pianist {
-    background-image: url(../img/directions_card_img_3.jpg);
+    /*background-image: url(../img/directions_card_img_3.jpg);*/
 }
 
 .directions__article--lectures {
-    background-image: url(../img/directions_card_img_4.jpg);
+    display: none;
+    /*background-image: url(../img/directions_card_img_4.jpg);*/
 }
 
 .directions__article--all {
     background-color: #eec643;
+    transform: rotate(-90deg);
 }
 
-/*ABOUT*/
+/*--------------------------ADVANTAGES--------------------------*/
 .advantages__inner {
     width: 90%;
     margin: 0 auto;
@@ -241,14 +303,30 @@
     .promo {
         background-image: url(../img/promo-header.jpg);
         background-position: top;
+        height: 530px;
     }
 
-    .section__col--6 {
+    .directions__col--6 {
         flex-basis: 50%;
         max-width: 50%;
     }
       
-    .section__col--12 {
+    .directions__col--12 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+      
+    .directions__article {
+        margin: 0;
+        height: 100%;
+    }
+
+    .advantages__col--6 {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+      
+    .advantages__col--12 {
         flex-basis: 100%;
         max-width: 100%;
     }
@@ -266,6 +344,10 @@
     {
         width: 1170px;
         margin: 0 auto;
+    }
+
+    .page-header {
+        padding-top: 30px;
     }
 
     .page-header__nav
@@ -287,7 +369,7 @@
     .main-nav__list
     {
         display: flex;
-
+    
         justify-content: flex-end;
     }
     .main-nav__item
@@ -304,11 +386,29 @@
     {
         display: none;
     }
+    .promo {
+        display: flex;
+        align-items: center;
+    }
 
+    .promo__inner {
+        display: flex;
+
+        justify-content: space-between;
+    }
+
+    .promo__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 
     .promo__title--desktop {
         display: block;
         font-size: 55px;
+        max-width: 695px;
+        line-height: 55px;
+        margin-bottom: 0;
     }
 
     .promo__title--mobile {
@@ -318,6 +418,8 @@
     .promo__slogan--desktop {
         display: block;
         font-size: 20px;
+        max-width: 435px;
+        line-height: 28px;
     }
 
     .promo__slogan--mobile {
@@ -328,8 +430,114 @@
         display: none;
     }
 
-    .promo__form {
-        display: block;
+    .promo__form, .adventages__form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
-    
+
+    .form {
+        width: 265px;
+        height: 420px;
+        background-color: #fff;
+        color: #000;
+        opacity: .85;
+    }
+
+    .form--grey {
+        border: 2px solid #000;
+    }
+
+    .form--yellow {
+        border: 2px solid #eec643;
+    }
+
+    .form__title, .form__description , .contacts__form {
+        padding: 0 30px;
+    }
+
+    .form__title {
+        font-family: PT Sans, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+        margin-bottom: 0px;
+        margin-top: 16px;
+    }
+
+    .form__description {
+        font-family: PT Sans, sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+        margin-top: -15px;
+        margin-bottom: 0px;
+        width: 210px;
+    }
+
+    .form__control {
+        font-family: PT Sans, sans-serif;
+        font-size: 20px;
+        width: 209px;
+        border: none;
+        background-color: transparent;
+        margin-left: 30px;
+    }
+
+    .form__control--grey {
+        border-bottom: 2px solid #000;
+    }
+
+    .form__control--yellow {
+        border-bottom: 2px solid #eec643;
+    }
+
+    .submit {
+        color: #fff;
+        text-transform: uppercase;
+        font-family: PT Sans, sans-serif;
+        font-size: 20px;
+        padding: 25px 0;
+        align-items: flex-end;
+        text-align: center;
+    }
+
+    .submit--grey {
+        background-color: #001720;
+    }
+
+    .submit--yellow {
+        background-color: #eec643;
+    }
+
+    .directions__title {
+        font-family: Prata, serif;
+        font-size: 50px;
+        border-top: 2px solid #eec643;
+        border-bottom: 2px solid #eec643;
+        transform: rotate(-90deg);
+        width: 520px;
+    }
+
+    .article__title {
+        font-family: PT Sans, sans-serif;
+        font-weight: bold;
+        font-size: 30px;
+    }
+
+    .article__text {
+        font-family: PT Sans, sans-serif;
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .article__price {
+        font-family: PT Sans, sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .directions__article--lectures {
+        display: block;
+    /*background-image: url(../img/directions_card_img_4.jpg);*/
+    }
+
 }

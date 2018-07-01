@@ -12,9 +12,6 @@
 		    <div class="page-header__inner">
 		    	<div class="page-header__row"> <!-- flex-родитель -->	
 			      <span class="logo">Diez</span>
-			      <!-- <class="page-header__logo ">
-			      	<div class="logo"></div>
-			      </div> -->
 			      <nav class="page-header__nav main-nav">
 			        <ul class="main-nav__list">
 			          <li class="main-nav__item"><a href="" class="main-nav__link">Направления</a></li>
@@ -43,44 +40,69 @@
             	<form class="promo__form form form--grey">
 					<h3 class="form__title">Вводный урок</h3>
                 	<p class="form__description">Попробуй любые направления бесплатно</p>
-                	<input class="form__control" placeholder="Имя" type="name">
-                	<input class="form__control" placeholder="Телефон" type="tel">
-              		<select class="form-control" name="directions" id="directions">
+                	<input class="form__control form__control--grey" placeholder="Имя" type="name">
+                	<input class="form__control form__control--grey" placeholder="Телефон" type="tel">
+              		<select class="form__control form__control--grey" name="directions" id="directions">
               			<option>Направления</option>
 	      				<option>Вокал</option>
 					    <option>Гитара</option>
 					    <option>Фортепиано</option>
 					    <option>Лекции</option> 
               		</select>
-					<button class="submit submit--grey">Записаться</button> 
+					<div class="submit submit--grey">Записаться</div> 
             	</form>
                 </div>    
             </div>   
         </section>
 
 		<section class="directions">
-			<h2 class="directions__title">Растим музыкантов</h2>
-			  	<article class="direction__article directions__article--guitar ">
-			  		<h3 class="article__title">Гитара</h3>
-			  		<p class="article__text">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андреас Сеговия— мы научим</p>
-			  		<p class="article__price">1 урок от 800₽</p>
-			  	</article>
-			  	<article class="direction__article directions__article--vocal">
-			  		<h3 class="article__title">Вокал</h3>
-			  		<p class="article__text">Академический, рок, эстрадный, джазовый</p>
-			  	</article>
-			  	<article class="direction__article directions__article--pianist">
-			  		<h3 class="article__title">Фортепиано</h3>
-			  		<p class="article__text">Академический, рок, эстрадный, джазовый</p>
-			  	</article>
-			  	
-			  	<article class="direction__article directions__article--lectures">
-			  		<h3 class="article__title">Лекции</h3>
-			  		<p class="article__text">Подтяни свои знания в теории музыки</p>
-			  	</article>
-			  	<article class="direction__article directions__article--all">
-			  		<h3 class="article__title">Все направления</h3>
-			  	</article>
+			<div class="directions__inner">
+				<div class="directions__row">
+					<div class="directions__col directions__col--6">
+						<div class="directions__row">
+							<div class="directions__col directions__col--12">
+								<h2 class="directions__title">Растим музыкантов</h2>
+							</div>
+							<div class="directions__col directions__col--6">
+								<article class="direction__article directions__article--vocal">
+									<h3 class="article__title">Вокал</h3>
+									<p class="article__text article__text--desktop">Академический, рок, эстрадный, джазовый</p>
+									<p class="article__text article__text--mobile">Пой, как Селин Дион и Эми Вайнхаус</p>
+								</article>
+							</div>
+							<div class="directions__col directions__col--6">
+								<article class="direction__article directions__article--guitar ">
+									<h3 class="article__title">Гитара</h3>
+									<p class="article__text article__text--desktop">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андреас Сеговия— мы научим</p>
+									<p class="article__text article__text--mobile">Начни играть, как Джими Хендрикс</p>
+									<p class="article__price">1 урок от 800₽</p>
+								</article>
+							</div>
+							<div class="directions__col directions__col--6">
+								<div class="directions__row">
+									<div class="directions__col directions__col--6">
+										<article class="directions__article directions__article--lectures">
+									  		<h3 class="article__title">Фортепиано</h3>
+									  		<p class="article__text article__text--mobile">Чувствуй клавиши, как Людовико Эйнауди</p>
+									  	</article>
+									</div>
+									<div class="directions__col directions__col--6">
+											<article class="directions__article directions__article--lectures">
+										  		<h3 class="article__title">Лекции</h3>
+										  		<p class="article__text article__text--desktop">Подтяни свои знания в теории музыки</p>
+										  	</article>
+										
+											<article class="directions__article directions__article--all">
+										  		<h3 class="article__title article__title--all">Все направления</h3>
+										  	</article>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div> 	
+				</div>
+			</div>
 		</section>
 
 		<section class="advantages">
@@ -114,31 +136,25 @@
 								</article>
 							</div>
 							<div class="advantages__col advantages__col--6">
-					        	<form class="form form--yellow">
-									<h3 class="form__title">Вводный урок</h3>
-					            	<p class="form__description">Попробуй любые направления бесплатно</p>
-					            	<input class="form__control" placeholder="Имя" type="name">
-					            	<input class="form__control" placeholder="Телефон" type="tel">
-					            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
-										<select class="form-control">
-										    <option>Вокал</option>
-										    <option>Гитара</option>
-										    <option>Фортепиано</option>
-										    <option>Лекции</option> 
-									   </select>
-									<button class="submit submit--yellow">Записаться</button>   
-					        	</form>
+	        	            	<form class="adventages__form form form--yellow">
+	        						<h3 class="form__title">Вводный урок</h3>
+	        	                	<p class="form__description">Попробуй любые направления бесплатно</p>
+	        	                	<input class="form__control form__control--yellow" placeholder="Имя" type="name">
+	        	                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel">
+	        	              		<select class="form-control form__control--yellow" name="directions" id="directions">
+	        	              			<option>Направления</option>
+	        		      				<option>Вокал</option>
+	        						    <option>Гитара</option>
+	        						    <option>Фортепиано</option>
+	        						    <option>Лекции</option> 
+	        	              		</select>
+	        						<div class="submit submit--yellow">Записаться</div> 
+	        	            	</form>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			
-			
-			
-			
-
-        	
 		</section>
 
 		<section class="video">
@@ -168,20 +184,20 @@
 			<h2 class="contacts__title">Ждём тебя</h2>
 			<p class="contacts__text">+7 (812) 566 56 56 СПБ, 6-я Линия ВО, 42</p>
 			<img src="" alt="">
-			<form class="form form--yellow">
-				<h3 class="form__title">Вводный урок</h3>
-            	<p class="form__description">Попробуй любые направления бесплатно</p>
-            	<input class="form__control" placeholder="Имя" type="name">
-            	<input class="form__control" placeholder="Телефон" type="tel">
-            	<input class="form__control" list="directions" placeholder="Направления" type="directions">
-						<datalist class="form-control" id="directions">
-					    <option>Вокал</option>
+            	<form class="contacts__form form form--yellow">
+					<h3 class="form__title">Вводный урок</h3>
+                	<p class="form__description">Попробуй любые направления бесплатно</p>
+                	<input class="form__control form__control--yellow" placeholder="Имя" type="name">
+                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel">
+              		<select class="form-control form__control--yellow" name="directions" id="directions">
+              			<option>Направления</option>
+	      				<option>Вокал</option>
 					    <option>Гитара</option>
 					    <option>Фортепиано</option>
 					    <option>Лекции</option> 
-				   </datalist> 
-				<button class="submit submit--yellow">Записаться</button>   
-        	</form>
+              		</select>
+					<div class="submit submit--yellow">Записаться</div> 
+            	</form>
 		</section>
 	</main>
 
@@ -196,5 +212,7 @@
 	      </ul>
 	    </div>
 	</footer>
+
+<script src="js/jquery.js"></script>
 </body>
 </html>
