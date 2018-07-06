@@ -6,11 +6,13 @@
 	<title>Школа Diez</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="style/normalize.css">
+	<link rel="stylesheet" href="css/">
+	<link rel="stylesheet" href="js/jquery.js">
 </head>
 <body>
 	<header class="page-header">
 		    <div class="page-header__inner">
-		    	<div class="page-header__row"> <!-- flex-родитель -->	
+		    	<div class="page-header__row">	
 			      <span class="logo">Diez</span>
 			      <nav class="page-header__nav main-nav">
 			        <ul class="main-nav__list">
@@ -20,9 +22,7 @@
 			          <li class="main-nav__item"><a href="" class="main-nav__link">Контакты</a></li>
 			        </ul>
 			      </nav>
-			    <button class="burger">
-			    	<span class="burger__inner"></span>
-			    </button>
+			      <span id="burger" class="burger"></span>
 		    	</div>
 		    </div>
 	</header>	
@@ -34,7 +34,7 @@
                     <h1 class="promo__title promo__title--mobile">Школа музыкального искусства</h1>
                     <p class="promo__slogan promo__slogan--desktop">Научим петь, играть на инструментах, не бояться сцены и получать удовольствие от музыки</p>
                     <p class="promo__slogan promo__slogan--mobile">Научим петь, играть на инструментах, получать удовольствие от музыки и не бояться сцены</p>
-                    <div class="promo__button">Вводный урок</div>
+                    <div class="button promo__button">Вводный урок</div>
                 </div>
                 
             	<form class="promo__form form form--grey">
@@ -59,47 +59,42 @@
 			<div class="directions__inner">
 				<div class="directions__row">
 					<div class="directions__col directions__col--6">
-						<div class="directions__row">
-							<div class="directions__col directions__col--12">
-								<h2 class="directions__title">Растим музыкантов</h2>
-							</div>
-							<div class="directions__col directions__col--6">
-								<article class="direction__article directions__article--vocal">
-									<h3 class="article__title">Вокал</h3>
-									<p class="article__text article__text--desktop">Академический, рок, эстрадный, джазовый</p>
-									<p class="article__text article__text--mobile">Пой, как Селин Дион и Эми Вайнхаус</p>
-								</article>
-							</div>
-							<div class="directions__col directions__col--6">
-								<article class="direction__article directions__article--guitar ">
-									<h3 class="article__title">Гитара</h3>
-									<p class="article__text article__text--desktop">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андреас Сеговия— мы научим</p>
-									<p class="article__text article__text--mobile">Начни играть, как Джими Хендрикс</p>
-									<p class="article__price">1 урок от 800₽</p>
-								</article>
-							</div>
-							<div class="directions__col directions__col--6">
-								<div class="directions__row">
-									<div class="directions__col directions__col--6">
-										<article class="directions__article directions__article--lectures">
-									  		<h3 class="article__title">Фортепиано</h3>
-									  		<p class="article__text article__text--mobile">Чувствуй клавиши, как Людовико Эйнауди</p>
-									  	</article>
-									</div>
-									<div class="directions__col directions__col--6">
-											<article class="directions__article directions__article--lectures">
-										  		<h3 class="article__title">Лекции</h3>
-										  		<p class="article__text article__text--desktop">Подтяни свои знания в теории музыки</p>
-										  	</article>
-										
-											<article class="directions__article directions__article--all">
-										  		<h3 class="article__title article__title--all">Все направления</h3>
-										  	</article>
-									</div>
-								</div>
-							</div>
-
+						<div class="directions__col directions__col--12">
+							<h2 class="directions__title">Растим музыкантов</h2>
 						</div>
+						<div class="directions__col directions__col--6">
+							<article class="directions__article directions__article--vocal">
+								<h3 class="article__title">Вокал</h3>
+								<p class="article__text article__text--desktop">Академический, рок, эстрадный, джазовый</p>
+								<p class="article__text article__text--mobile">Пой, как Селин Дион и Эми Вайнхаус</p>
+							</article>
+						</div>
+						<div class="directions__col directions__col--6">
+							<article class="directions__article directions__article--guitar ">
+								<h3 class="article__title">Гитара</h3>
+								<p class="article__text article__text--desktop">Хочешь играть как Джими Хендрикс, Би Би Кинг или Андреас Сеговия— мы научим</p>
+								<p class="article__text article__text--mobile">Начни играть, как Джими Хендрикс</p>
+								<p class="article__price">1 урок от 800₽</p>
+							</article>
+						</div>
+					</div>
+					<div class="directions__col directions__col--6">
+						<div class="directions__col directions__col--6">
+							<article class="directions__article directions__article--pianist">
+						  		<h3 class="article__title">Фортепиано</h3>
+						  		<p class="article__text article__text--mobile">Чувствуй клавиши, как Людовико Эйнауди</p>
+						  	</article>
+							<article class="directions__article directions__article--all">
+						  		<h3 class="article__title article__title--all">Все направления</h3>
+						  	</article>
+						</div>
+						<div class="directions__col directions__col--6">
+								<article class="directions__article directions__article--lectures">
+							  		<h3 class="article__title">Лекции</h3>
+							  		<p class="article__text article__text--desktop">Подтяни свои знания в теории музыки</p>
+							  	</article>
+						</div>	
+
 					</div> 	
 				</div>
 			</div>
@@ -116,32 +111,36 @@
 							<div class="advantages__col advantages__col--6">
 								<article class="advantages__article advantages__article--structure">
 									<h3 class="article__title">Состав</h3>
-								  	<p class="article__text">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+								  	<p class=" article__text article__text--desktop">Тебя будут обучать профессионалы с высшим музыкальным образованием</p>
+								  	<p class="article__text article__text--mobile">Учись только у профессионалов</p>
 								</article>
 							</div>
 							<div class="advantages__col advantages__col--6">
 								<article class="advantages__article advantages__article--result">
 									<h3 class="article__title">Результат</h3>
-								  	<p class="article__text">Выступи на отчётном концерте через три месяца обучения</p>
+								  	<p class="article__text article__text--desktop">Выступи на отчётном концерте через три месяца обучения</p>
+								  	<p class="article__text article__text--mobile">Выступай на отчётных концертах</p>
 								</article>
 							</div>
 						</div>
 					</div>
-					<div class="advantages__col about__col--6">
+					<div class="advantages__col advantages__col--6">
 						<div class="advantages__row">
 							<div class="advantages__col advantages__col--6">
 								<article class="advantages__article advantages__article--studio">
 									<h3 class="article__title">Студия</h3>
-								  	<p class="article__text">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+								  	<p class="article__text article__text--desktop">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+								  	<p class="article__text article__text--mobile">Записывай песни каждый месяц</p>
 								</article>
 							</div>
-							<div class="advantages__col advantages__col--6">
+							<!-- нужно куда-то вставить <div class="advantages__button">Вводный урок</div> -->
+							<div class="advantages__col advantages__col--6"> <!-- этот блок должен быть невидимым в mobile -->
 	        	            	<form class="adventages__form form form--yellow">
 	        						<h3 class="form__title">Вводный урок</h3>
 	        	                	<p class="form__description">Попробуй любые направления бесплатно</p>
 	        	                	<input class="form__control form__control--yellow" placeholder="Имя" type="name">
 	        	                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel">
-	        	              		<select class="form-control form__control--yellow" name="directions" id="directions">
+	        	              		<select class="form__control form__control--yellow" name="directions" id="directions">
 	        	              			<option>Направления</option>
 	        		      				<option>Вокал</option>
 	        						    <option>Гитара</option>
@@ -180,39 +179,56 @@
 				<button class="video__button"></button>
 			</article>
 		</section>
+
 		<section class="contacts">
-			<h2 class="contacts__title">Ждём тебя</h2>
-			<p class="contacts__text">+7 (812) 566 56 56 СПБ, 6-я Линия ВО, 42</p>
-			<img src="" alt="">
-            	<form class="contacts__form form form--yellow">
-					<h3 class="form__title">Вводный урок</h3>
-                	<p class="form__description">Попробуй любые направления бесплатно</p>
-                	<input class="form__control form__control--yellow" placeholder="Имя" type="name">
-                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel">
-              		<select class="form-control form__control--yellow" name="directions" id="directions">
-              			<option>Направления</option>
-	      				<option>Вокал</option>
-					    <option>Гитара</option>
-					    <option>Фортепиано</option>
-					    <option>Лекции</option> 
-              		</select>
-					<div class="submit submit--yellow">Записаться</div> 
-            	</form>
+			<div class="contacts__inner">
+				<div class="contacts__row">
+					<div class="contacts__col">
+						<h2 class="contacts__title">Ждём тебя</h2>
+						<p class="contacts__text">+7 (812) 566 56 56 <br> СПБ, 6-я Линия ВО, 42</p>
+						<!-- <div class="contacts__map">
+		            		<iframe src="https://yandex.ru/map-widget/v1/?um=constructor:25053caec9f1a487fdc9b98ba4371f48551f1d6a53344af638a8a3fa7ea5b286&amp;source=constructor" width="100%" height="100%" frameborder="0"></iframe>
+		            	</div> -->
+		            	<!-- <div id="map" class="contacts__map">
+		            		<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A488fb37b345d9e2d2e4d7c5eef4267257c696e4175afc5d94aa6a820dcdbf17b&amp;width=100%&amp;height=100%&amp;lang=ru_RU&amp;id=map&amp;"></script>
+		            	</div> -->
+						<div class="contacts__button">Вводный урок</div>
+					</div>
+					
+	            	<form class="contacts__form form form--yellow">
+						<h3 class="form__title">Вводный урок</h3>
+	                	<p class="form__description">Попробуй любые направления бесплатно</p>
+	                	<input class="form__control form__control--yellow" placeholder="Имя" type="name">
+	                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel">
+	              		<select class="form__control form__control--yellow" name="directions" id="directions">
+	              			<option>Направления</option>
+		      				<option>Вокал</option>
+						    <option>Гитара</option>
+						    <option>Фортепиано</option>
+						    <option>Лекции</option> 
+	              		</select>
+						<div class="submit submit--yellow">Записаться</div> 
+	            	</form>  
+				</div>
+			</div>
 		</section>
 	</main>
 
-	<footer class="page-footer">
-	    <div class="page-footer__inner">
-	      <a href="" class="logo">Diez</a>
-	      <ul class="page-footer__list">
-	          <li class="page-footer__link">youtube</li>
-	          <li class="page-footer__link">instagram</li>
-	          <li class="page-footer__link">facebook</li>
-	          <li class="page-footer__link">vkontakte</li>
-	      </ul>
+	<footer>
+	    <div class="footer__inner">
+		    <div class="footer__row">
+		    	<a href="#" class="logo">Diez</a></div>
+		    	<div class="footer__social-bar"> <!-- social-bar-wrap -->
+		          <a title="youtube" href="" class="footer__social-link">youtube</a>
+		          <a title="instagram" href="" class="footer__social-link">instagram</a>
+		          <a title="facebook" href="" class="footer__social-link">facebook</a>
+		          <a title="vkontakte" href="" class="footer__social-link">vkontakte</a>
+			    </div>
+		    </div>
 	    </div>
 	</footer>
 
+<script src="js/jquery-3.3.1.min.js"></script>
 <script src="js/jquery.js"></script>
 </body>
 </html>
