@@ -57,7 +57,7 @@
 
 		<section class="directions">
 			<div class="container">
-				<div class="row">
+				<div class="row directions__row">
 					<div class="col">
 						<h2 class="directions__title">Растим музыкантов</h2>
 					</div>
@@ -114,30 +114,33 @@
 						</div>
 					</div>
 					<div class="col col--6">
-						<div class="row">
-							<article class="col col--6 advantages__article advantages__article--studio">
-								<h3 class="article__title">Студия</h3>
-							  	<p class="article__text article__text--desktop">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
-							  	<p class="article__text article__text--mobile">Записывай песни каждый месяц</p>
-							</article>
-							<div class="advantages__button">Вводный урок</div>
-							<div class="col col--6"> <!-- этот блок должен быть невидимым в mobile -->
+						<div class="row"> 
+							<div class="col col--6">
+								<article class="advantages__article advantages__article--studio">
+									<h3 class="article__title">Студия</h3>
+								  	<p class="article__text article__text--desktop">Запиши свою песню в нашей студии звукозаписи, одна песня в месяц бесплатно</p>
+								  	<p class="article__text article__text--mobile">Записывай песни каждый месяц</p>
+								</article>
+							</div>
 
-                    
-			            	<form class="form form--yellow">
-								<h3 class="form__title">Вводный урок</h3>
-			                	<p class="form__description">Попробуй любые направления бесплатно</p>
-			                	<input class="form__control form__control--yellow" placeholder="Имя" type="text" id="name">
-			                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel" id="phone">
-			              		<select class="form__control form__control--yellow" name="directions" id="directions">
-			              			<option>Направления</option>
-				      				<option>Вокал</option>
-								    <option>Гитара</option>
-								    <option>Фортепиано</option>
-								    <option>Лекции</option> 
-			              		</select>
-								<input type="submit" name="" value="записаться" class="submit submit--yellow">
-			            	</form>
+							<div class="advantages__button">Вводный <br>  урок</div>
+
+							<div class="col col--6 advantages__form">
+				            	<form class="advantages__article form form--yellow">
+									<h3 class="form__title">Вводный урок</h3>
+				                	<p class="form__description">Попробуй любые направления бесплатно</p>
+				                	<input class="form__control form__control--yellow" placeholder="Имя" type="text" id="name">
+				                	<input class="form__control form__control--yellow" placeholder="Телефон" type="tel" id="phone">
+				              		<select class="form__control form__control--yellow" name="directions" id="directions">
+				              			<option>Направления</option>
+					      				<option>Вокал</option>
+									    <option>Гитара</option>
+									    <option>Фортепиано</option>
+									    <option>Лекции</option> 
+				              		</select>
+									<input type="submit" name="" value="записаться" class="submit submit--yellow">
+				            	</form>
+				            </div>
 						</div>
 					</div>
 				</div>
@@ -145,6 +148,7 @@
 		</section>
 
 		<section class="video">
+			.container>.row>.col
 			<h2 class="video__title">В стенах школы</h2>
 			<article class="video__block">
 				<h3 class="video__text">Зимняя вишня</h3>

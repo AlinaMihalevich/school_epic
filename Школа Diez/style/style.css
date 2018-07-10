@@ -80,8 +80,9 @@ body {
 
 @media (min-width: 1200px) {
     .container {
-        width: 1170px;
+        width: 1180px;
         margin: 0 auto;
+        padding: 0;
     }
 
     .row {
@@ -91,7 +92,6 @@ body {
         margin-left: -15px;
 
         flex-wrap: wrap;
-        justify-content: flex-end;
     }
 
     .col {
@@ -113,6 +113,12 @@ body {
 
     .col--6 {
         width: 50%;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .col--12 {
+        width: 100%;
         padding-right: 15px;
         padding-left: 15px;
     }
@@ -275,7 +281,7 @@ body {
 /*--------------------------DIRECTIONS--------------------------*/
 .directions__article {
     box-sizing: border-box;
-    margin: 0 15px; /*из-за него не работал offset*/
+    margin: 0 15px;
 
     color: #fff;
     background-size: cover;
@@ -332,6 +338,8 @@ body {
 .directions__article--pianist {
     background-image: url(../img/directions_card_img_3-mobile.jpg);
     background-repeat: no-repeat;
+
+    margin-right: 100px;
 }
 
 .directions__article--lectures {
@@ -339,16 +347,17 @@ body {
 }
 
 .directions__article--all {
-    /*position: absolute;*/
+    position: absolute;
 
     transform: rotate(-90deg);
 
     color: #000;
 
-   /* bottom: 0;
-    right: 0;*/
-
     background-color: #eec643;
+    max-width: 144px;
+    min-height: 65px;
+    bottom: 38px;
+    right: -38px;
 }
 
 .row {
@@ -356,54 +365,65 @@ body {
 }
 
 /*--------------------------ADVANTAGES--------------------------*/
-.advantages__title
-{
+.advantages__title {
     font-family: Prata, serif;
     font-size: 30px;
     font-weight: normal;
 
     border-top: 1px solid #eec643;
     border-bottom: 1px solid #eec643;
+
+    margin-bottom: 10px;
 }
 
-.advantages__article
-{
+.advantages__article {
     box-sizing: border-box;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
     padding: 5px;
+    background-size: cover;
+    min-height: 144px;
 
     color: #fff;
 }
 
-.advantages__article--structure
-{
+.advantages__article--structure {
     background-image: url(../img/advantages_card_img_1-mobile.jpg);
     background-repeat: no-repeat;
 }
 
-.advantages__article--result
-{
+.advantages__article--result {
     background-image: url(../img/advantages_card_img_2-mobile.jpg);
+    background-repeat: no-repeat;
 }
 
-.advantages__article--studio
-{
+.advantages__article--studio {
     background-image: url(../img/advantages_card_img_3-mobile.jpg);
+    background-repeat: no-repeat;
+
+    margin-right: 83px;
 }
 
-.advantages__button
-{
+.advantages__button {
+    position: absolute;
     font-family: PT Sans, serif;
     font-size: 16px;
 
-    padding: 25px 78px;
+    padding: 15px 15px;
+    padding-right: 50px;
 
     transform: rotate(-90deg);
-    text-align: center;
+    text-align: left;
     text-transform: uppercase;
 
     color: white;
     background-color: #eec643;
+
+    bottom: 54px;
+    right: -25px;
+}
+
+.advantages__form {
+    display: none;
 }
 
 /*--------------------------VIDEO-------------------------*/
@@ -499,35 +519,14 @@ footer
         background-image: url(../img/promo-header.jpg);
         background-position: top;
     }
-    /*---------------------directions-------------------*/
-    .directions {
-        margin-top: 90px;
-        margin-bottom: 90px;
-    }
-    /*---------------------advantages-------------------*/
-    .advantages__col--6
-{
-        max-width: 50%;
 
-        flex-basis: 50%;
-    }
-
-    .advantages__col--12
-{
-        max-width: 100%;
-
-        flex-basis: 100%;
-    }
-
-    .advantages__article
-{
-        height: 100%;
-        margin: 0;
-    }
-}
 
 @media (min-width: 1200px) {
     /*---------------------common----------------------*/
+    .directions, .advantages {
+        margin-top: 90px;
+        margin-bottom: 90px;
+    }
 
     /*------------------page-header--------------------*/
     .page-header {
@@ -713,6 +712,11 @@ footer
         background-color: #eec643;
     }
     /*----------------------directions----------------------*/
+    .directions__row {
+        margin-left: 100px;
+        margin-right: 0px;
+    }  
+
     .directions {
         position: relative;
     }
@@ -728,15 +732,17 @@ footer
 
         position: absolute;
 
-        width: 568px;
+        width: 570px;
 
         transform: rotate(-90deg);
 
         border-top: 2px solid #eec643;
         border-bottom: 2px solid #eec643;
 
-        bottom: 274px;
-        left: -295px;
+        bottom: 266px;
+        left: -340px;
+        padding-bottom: 10px;
+        padding-top: 5px;
     }
 
     .article__title {
@@ -761,6 +767,8 @@ footer
     .directions__article--vocal {
         background-image: url(../img/directions_card_img_2.jpg);
         background-repeat: no-repeat;
+
+        min-width: 570px;
     }
 
     .directions__article--guitar {
@@ -771,6 +779,8 @@ footer
     .directions__article--pianist {
         background-image: url(../img/directions_card_img_3.jpg);
         background-repeat: no-repeat;
+
+        margin-right: 15px;
     }
 
     .directions__article--lectures {
@@ -784,16 +794,23 @@ footer
 
         color: #fff;
         background-color: #eec643;
-        right: 40px;
+        right: 0;
         bottom: 0;
+        min-width: 268px;
+
+        position: absolute;
     }
     /*-----------------------advantages---------------------*/
     .advantages__title {
         font-size: 50px;
+        margin-bottom: 30px;
+        margin-top: 0px;
+        padding-bottom: 10px;
     }
 
     .advantages__article {
         min-height: 470px;
+        max-height: 568px;
     }
 
     .advantages__article--structure {
@@ -809,10 +826,24 @@ footer
     .advantages__article--studio {
         background-image: url(../img/advantages_card_img_3.jpg);
         background-repeat: no-repeat;
+
+        min-height: 570px;
+        min-width: 272px;
+        margin-right: 0;
+        margin-left: 0;
     }
 
     .advantages__button {
         display: none;
+    }
+
+    .advantages__form {
+        display: block;   
+    }
+
+    .form--yellow {
+        min-height: 570px;
+        min-width: 270px;
     }
     /*----------------------contacts----------------------*/
     .contacts__button
