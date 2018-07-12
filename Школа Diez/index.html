@@ -6,7 +6,8 @@
 	<title>Школа Diez</title>
 	<link rel="stylesheet" type="text/css" href="style/style.css">
 	<link rel="stylesheet" href="style/normalize.css">
-	<link rel="stylesheet" href="js/jquery.js">
+	<link rel="stylesheet" type="text/css" href="style/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="style/slick-theme.css"/>
 </head>
 <body>
 	<header class="page-header">
@@ -146,6 +147,40 @@
 				</div>
 			</div>
 		</section>
+		
+
+		<section class="video--mobile">
+			<div class="container">
+				<div class="row video__row">
+					<div class="col">
+						<h2 class="video__title">В стенах школы</h2>
+					</div>
+					<div class="col video-slider" id="video-slider">
+						<article class="video__block video__block--1" tabindex="0">
+							<h3 class="video__article-title">Зимняя вишня</h3>
+							<p class="video__article-text">Финальный концерт 2017 года</p>
+							<button class="video__button"></button>
+						</article>	
+						<article class="video__block video__block--2" tabindex="-1">
+							<h3 class="video__article-title">Янг Чжо</h3>
+							<p class="video__article-text">Репетиция сольной партии скрипки</p>
+							<button class="video__button"></button>
+						</article>
+						<article class="video__block video__block--3" tabindex="-1">
+							<h3 class="video__article-title">Летний штиль</h3>
+							<p class="video__article-text">За кулисами концерта</p>
+							<button class="video__button"></button>
+						</article>
+						<article class="video__block video__block--4" tabindex="-1">
+							<h3 class="video__article-title">Сергей Трофимов</h3>
+							<p class="video__article-text">ЛЮБЭ — Выйду в поле с конём</p>
+							<button class="video__button"></button>
+						</article>
+					</div>
+
+				</div>
+			</div>
+		</section>
 
 		<section class="video">
 			<div class="container">
@@ -190,7 +225,7 @@
 							<p class="contacts__adress">+7 (812) 566 56 56 <br> СПБ, 6-я Линия ВО, 42</p>
 						</div>
 						
-						<div class="col col--9 map"> <!-- min-width="288px" min-height="216px" max-width="870px" min-height="468px" -->
+						<div class="col col--9 map">
 							<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.4168096531696!2d30.277480376932285!3d59.94181882750023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46963125ca62971b%3A0x310119609c7909f7!2zNy3RjyDQu9C40L0uINCSLtCeLiwgNDIsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTkxNzg!5e0!3m2!1sru!2sru!4v1531319747686" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 						</div>
 						<div class="button contacts__button">Вводный урок</div>
@@ -224,16 +259,17 @@
 					<a href="#" class="logo">Diez</a>
 				</div>
 				<div class="col col--6 footer__social-bar">
-			        <a title="youtube" href="" class="footer__social-link">youtube</a>
-			        <a title="instagram" href="" class="footer__social-link">instagram</a>
-			        <a title="facebook" href="" class="footer__social-link">facebook</a>
-			        <a title="vkontakte" href="" class="footer__social-link">vkontakte</a>
+			        <a title="youtube" href="#" class="footer__social-link">youtube</a>
+			        <a title="instagram" href="#" class="footer__social-link">instagram</a>
+			        <a title="facebook" href="#" class="footer__social-link">facebook</a>
+			        <a title="vkontakte" href="#" class="footer__social-link">vkontakte</a>
 			    </div>
 		    </div>
 	    </div>
 	</footer>
 
 <script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/slick.min.js"></script>
 <script src="js/jquery.js"></script>
 </body>
 </html>

@@ -10,3 +10,28 @@ $('#burger').on('click', function(){
 		$(this).removeClass('cross');
 	}
 });
+
+$(document).ready(function(){
+	$('#video-slider').slick({
+		adaptiveHeight: true,
+		autoplay: true,
+  		autoplaySpeed: 3000,
+	});
+
+	console.log( $(window).width());
+	
+	function checkWindowSize() {
+		if ($(window).width() < 1024) {
+			console.log('показать слайдер');
+		}
+		else {
+			console.log('показать просто блоки')
+		}
+	}
+
+	checkWindowSize();
+
+	$(window).on('resize', function(){
+		checkWindowSize();
+	});
+});
