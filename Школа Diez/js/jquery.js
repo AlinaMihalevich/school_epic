@@ -13,9 +13,14 @@ $('#burger').on('click', function(){
 
 $(document).ready(function(){
 	$('#video-slider').slick({
-		adaptiveHeight: true,
-		autoplay: true,
-  		autoplaySpeed: 3000,
+		// adaptiveHeight: true,
+		// autoplay: true,
+  // 	autoplaySpeed: 3000,
+  
+  		// infinite: true;
+  		// dots: true;
+  		// slidesToShow: 3;
+  		// slidesToScroll: 1;
 	});
 
 	console.log( $(window).width());

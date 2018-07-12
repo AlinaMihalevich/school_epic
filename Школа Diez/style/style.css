@@ -436,7 +436,8 @@ body {
 
 /*--------------------------VIDEO-------------------------*/
 
-.video {
+#video-slider {
+    display: block;
 }
 
 .video__title {
